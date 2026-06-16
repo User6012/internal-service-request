@@ -11,17 +11,17 @@
    <pluginDefaultPropertiesList/>
    <environmentVariableList>
       <environmentVariable>
+         <id>AppName</id>
+         <appId>isr</appId>
+         <appVersion>5</appVersion>
+         <value>Internal Service Request</value>
+      </environmentVariable>
+      <environmentVariable>
          <id>counter</id>
          <appId>isr</appId>
          <appVersion>5</appVersion>
          <value>17</value>
          <remarks>Used for plugin: Id Generator Field</remarks>
-      </environmentVariable>
-      <environmentVariable>
-         <id>AppName</id>
-         <appId>isr</appId>
-         <appVersion>5</appVersion>
-         <value>Internal Service Request</value>
       </environmentVariable>
    </environmentVariableList>
    <messageList/>
