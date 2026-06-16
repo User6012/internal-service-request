@@ -1,0 +1,75 @@
+elements:
+- elements:
+  - elements:
+    - className: org.joget.apps.form.lib.TextArea
+      properties:
+        readonly: ''
+        validator:
+          className: org.joget.apps.form.lib.DefaultValidator
+          properties:
+            custom-regex: ''
+            type: ''
+            message: ''
+            mandatory: 'true'
+        workflowVariable: ''
+        id: remarks
+        label: Add Remarks On This Issue
+        placeholder: ''
+        rows: '4'
+        value: ''
+        cols: '50'
+        readonlyLabel: ''
+    - className: org.joget.apps.form.lib.HiddenField
+      properties:
+        workflowVariable: ''
+        id: username
+        value: '#currentUser.username#'
+    - className: org.joget.apps.form.lib.HiddenField
+      properties:
+        workflowVariable: ''
+        id: name
+        value: '#currentUser.firstName# #currentUser.lastName#'
+    - className: org.joget.apps.form.lib.HiddenField
+      properties:
+        workflowVariable: ''
+        id: request_id
+        value: ''
+    className: org.joget.apps.form.model.Column
+    properties:
+      width: 100%
+  className: org.joget.apps.form.model.Section
+  properties:
+    visibilityControl: ''
+    loadBinder:
+      className: ''
+      properties: '{}'
+    id: section1
+    label: ''
+    storeBinder:
+      className: ''
+      properties: '{}'
+    visibilityValue: ''
+className: org.joget.apps.form.model.Form
+properties:
+  noPermissionMessage: ''
+  loadBinder:
+    className: org.joget.apps.form.lib.WorkflowFormBinder
+    properties: {
+      }
+  name: ISR Remark
+  description: ''
+  postProcessorRunOn: both
+  permission:
+    className: ''
+    properties: {
+      }
+  id: isr_remark
+  postProcessor:
+    className: ''
+    properties: {
+      }
+  storeBinder:
+    className: org.joget.apps.form.lib.WorkflowFormBinder
+    properties: {
+      }
+  tableName: j_isr_remark

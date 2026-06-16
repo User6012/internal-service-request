@@ -1,0 +1,1261 @@
+datalist:d_add_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:40 PM
+datalist:isr_personal_submitted:
+  data:
+  - path: binder.properties.filters
+    isError: false
+    label: '#currentUser.username#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '[{"field":"requester","join":"AND","value":"#currentUser.username#","operator":"="}]'
+  - path: binder.properties.filters[0].value
+    isError: false
+    label: '#currentUser.username#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.username#'
+  lastModifiedDate: May 31, 2026, 2:01:41 PM
+datalist:isr_resolved_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:42 PM
+datalist:isr_assigned_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:41 PM
+form:isr_new_request:
+  data:
+  - path: elements[0].elements[0].elements[5].properties.value
+    isError: false
+    label: '#date.DAY+2.yyyy-MM-dd#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#date.DAY+2.yyyy-MM-dd#'
+  - path: elements[0].elements[0].elements[9].properties.value
+    isError: false
+    label: '#currentUser.username#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.username#'
+  - path: elements[0].elements[0].elements[10].properties.value
+    isError: false
+    label: '#currentUser.department.id#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.department.id#'
+  - path: elements[0].elements[0].elements[11].properties.value
+    isError: false
+    label: '#date.yyyy-MM-dd HH:mm:ss#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#date.yyyy-MM-dd HH:mm:ss#'
+  - path: elements[0].elements[0].elements[12].properties.value
+    isError: false
+    label: '#currentUser.firstName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.firstName# #currentUser.lastName#'
+  - path: elements[0].elements[0].elements[12].properties.value
+    isError: false
+    label: '#currentUser.lastName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.firstName# #currentUser.lastName#'
+  lastModifiedDate: May 31, 2026, 2:01:37 PM
+form:isrrequestview:
+  data:
+  - path: elements[0].elements[0].elements[1].properties.value
+    isError: false
+    label: '#form.j_isr_request.ref_id#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '##form.j_isr_request.ref_id#: #form.j_isr_request.subject#'
+  - path: elements[0].elements[0].elements[1].properties.value
+    isError: false
+    label: '#form.j_isr_request.subject#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '##form.j_isr_request.ref_id#: #form.j_isr_request.subject#'
+  - path: elements[0].elements[0].elements[1].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: '##form.j_isr_request.ref_id#: #form.j_isr_request.subject#'
+  - path: elements[0].elements[0].elements[2].properties.value
+    isError: false
+    label: '#form.j_isr_request.status#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |
+      <span style="font-size:150%;">#form.j_isr_request.status#</span>
+  - path: elements[0].elements[0].elements[2].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: |
+      <span style="font-size:150%;">#form.j_isr_request.status#</span>
+  - path: elements[0].elements[0].elements[3].properties.value
+    isError: false
+    label: '#form.j_isr_request.description#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |
+      #form.j_isr_request.description#
+  - path: elements[0].elements[0].elements[3].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: |
+      #form.j_isr_request.description#
+  - path: elements[0].elements[0].elements[4].properties.value
+    isError: false
+    label: '#form.j_isr_request.priority#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |
+      #form.j_isr_request.priority#
+  - path: elements[0].elements[0].elements[4].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: |
+      #form.j_isr_request.priority#
+  - path: elements[0].elements[0].elements[5].properties.value
+    isError: false
+    label: '#form.j_isr_request.attention#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#form.j_isr_request.attention#'
+  - path: elements[0].elements[0].elements[5].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: '#form.j_isr_request.attention#'
+  - path: elements[0].elements[1].elements[0].properties.value
+    isError: false
+    label: '#form.j_isr_request.duedate#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#form.j_isr_request.duedate#'
+  - path: elements[0].elements[1].elements[0].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: '#form.j_isr_request.duedate#'
+  - path: elements[0].elements[1].elements[1].properties.value
+    isError: false
+    label: '#form.j_isr_request.requester_name#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#form.j_isr_request.requester_name# (#form.j_isr_request.requester#)
+      on #form.j_isr_request.createdDate#'
+  - path: elements[0].elements[1].elements[1].properties.value
+    isError: false
+    label: '#form.j_isr_request.requester#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#form.j_isr_request.requester_name# (#form.j_isr_request.requester#)
+      on #form.j_isr_request.createdDate#'
+  - path: elements[0].elements[1].elements[1].properties.value
+    isError: false
+    label: '#form.j_isr_request.createdDate#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#form.j_isr_request.requester_name# (#form.j_isr_request.requester#)
+      on #form.j_isr_request.createdDate#'
+  - path: elements[0].elements[1].elements[1].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: '#form.j_isr_request.requester_name# (#form.j_isr_request.requester#)
+      on #form.j_isr_request.createdDate#'
+  - path: elements[0].elements[1].elements[2].properties.value
+    isError: false
+    label: '#form.j_isr_request.verifier#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#'
+  - path: elements[0].elements[1].elements[2].properties.value
+    isError: false
+    label: '#form.j_isr_request.dateVerified#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#'
+  - path: elements[0].elements[1].elements[2].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: '#form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#'
+  - path: elements[0].elements[1].elements[3].properties.value
+    isError: false
+    label: '#form.j_isr_request.department_name#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |
+      #form.j_isr_request.department_name#
+  - path: elements[0].elements[1].elements[3].properties.value
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: |
+      #form.j_isr_request.department_name#
+  lastModifiedDate: May 31, 2026, 2:01:40 PM
+datalist:isr_status_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:42 PM
+form:isr_resolve_reopened:
+  data:
+  - path: elements[1].elements[0].elements[1].properties.optionsBinder.properties.emptyLabel
+    isError: false
+    label: '#i18n.Select#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.Select#'
+  - path: elements[1].elements[0].elements[2].properties.loadBinder.properties.script
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.BeanShellOverviewTool
+    content: return null;
+  lastModifiedDate: May 31, 2026, 2:01:39 PM
+form:isr_remark:
+  data:
+  - path: elements[0].elements[0].elements[1].properties.value
+    isError: false
+    label: '#currentUser.username#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.username#'
+  - path: elements[0].elements[0].elements[2].properties.value
+    isError: false
+    label: '#currentUser.firstName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.firstName# #currentUser.lastName#'
+  - path: elements[0].elements[0].elements[2].properties.value
+    isError: false
+    label: '#currentUser.lastName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.firstName# #currentUser.lastName#'
+  lastModifiedDate: May 31, 2026, 2:01:38 PM
+datalist:d_my_requests:
+  data:
+  - path: binder.properties.filters
+    isError: false
+    label: '#currentUser.username#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '[{"field":"requester","join":"AND","value":"#currentUser.username#","operator":"="}]'
+  - path: binder.properties.filters[0].value
+    isError: false
+    label: '#currentUser.username#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.username#'
+  lastModifiedDate: May 31, 2026, 2:01:40 PM
+datalist:isr_all_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:40 PM
+datalist:isr_reopened_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:42 PM
+theme:theme_ISRTheme:
+  data:
+  - path: theme.properties.dx8backgroundImage
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.AppResourcesOverviewTool
+    content: '#appResource.isrWelcomePage.png#'
+  - path: theme.properties.dx8backgroundImage
+    isError: false
+    label: '#appResource.isrWelcomePage.png#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#appResource.isrWelcomePage.png#'
+  lastModifiedDate: May 31, 2026, 2:01:43 PM
+datalist:isr_priority_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:41 PM
+datalist:isr_rejected_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:42 PM
+datalist:isr_new_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:41 PM
+form:isr_resolve_assigned:
+  data:
+  - path: elements[1].elements[0].elements[1].properties.loadBinder.properties.script
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.BeanShellOverviewTool
+    content: return null;
+  lastModifiedDate: May 31, 2026, 2:01:39 PM
+userview:isr:
+  data:
+  - path: properties.welcomeMessage
+    isError: false
+    label: '#date.EEE, d MMM yyyy#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#date.EEE, d MMM yyyy#'
+  - path: properties.name
+    isError: false
+    label: '#i18n.applicationName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.applicationName#'
+  - path: categories[0].menus[0].properties.content
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.AppResourcesOverviewTool
+    content: '#appResource.isrWelcomePage.png#'
+  - path: categories[0].menus[0].properties.content
+    isError: false
+    label: '#appResource.isrWelcomePage.png#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <h1></h1>
+      <table width="90%" border="0" collapse="" align="center">
+      <tbody>
+      <tr>
+      <td>
+      <h1><span style="font-size: 24pt; color: rgb(51, 51, 51);">Welcome to the Internal Service Request App</span></h1>
+      <p><span style="font-size: 14pt; color: #000000;">Manage, Approve and Track Interdepartmental Requests</span></p>
+      </td>
+      </tr>
+      <tr>
+      <td><img width="40%" src="#appResource.isrWelcomePage.png#"></td>
+      </tr>
+      <tr>
+      <td>
+      <p><br>This is an Internal Service Request (ISR) app that allows users to make and manage inter-departmental service requests.</p>
+      <p>Users will be able to make requests to specific head of department (HOD), who can then either resolve the request or assign the task to a subordinate for further action. This app also provides overall ISR reporting.&nbsp;</p>
+      <p>The Internal Service Request app has been built to make use of the new features and capababilities of Joget DX Enterprise.</p>
+      <p><strong>Tips to Joget administrator: </strong></p>
+      <ul>
+      <li>Input your Joget SMTP server configurations in <a href="#request.contextPath?html#/web/console/setting/general" target="_blank" rel="noopener">Web Console &gt; General Settings</a>&nbsp;to send email messages.</li>
+      <li>Input an email address for admin user in <a href="#request.contextPath?html#/web/console/directory/users" target="_blank" rel="noopener">Web Console &gt; Setup Users</a>&nbsp;for email notification to work.</li>
+      </ul>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+  - path: categories[0].menus[0].properties.content
+    isError: false
+    label: '#request.contextPath?html#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <h1></h1>
+      <table width="90%" border="0" collapse="" align="center">
+      <tbody>
+      <tr>
+      <td>
+      <h1><span style="font-size: 24pt; color: rgb(51, 51, 51);">Welcome to the Internal Service Request App</span></h1>
+      <p><span style="font-size: 14pt; color: #000000;">Manage, Approve and Track Interdepartmental Requests</span></p>
+      </td>
+      </tr>
+      <tr>
+      <td><img width="40%" src="#appResource.isrWelcomePage.png#"></td>
+      </tr>
+      <tr>
+      <td>
+      <p><br>This is an Internal Service Request (ISR) app that allows users to make and manage inter-departmental service requests.</p>
+      <p>Users will be able to make requests to specific head of department (HOD), who can then either resolve the request or assign the task to a subordinate for further action. This app also provides overall ISR reporting.&nbsp;</p>
+      <p>The Internal Service Request app has been built to make use of the new features and capababilities of Joget DX Enterprise.</p>
+      <p><strong>Tips to Joget administrator: </strong></p>
+      <ul>
+      <li>Input your Joget SMTP server configurations in <a href="#request.contextPath?html#/web/console/setting/general" target="_blank" rel="noopener">Web Console &gt; General Settings</a>&nbsp;to send email messages.</li>
+      <li>Input an email address for admin user in <a href="#request.contextPath?html#/web/console/directory/users" target="_blank" rel="noopener">Web Console &gt; Setup Users</a>&nbsp;for email notification to work.</li>
+      </ul>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+  - path: categories[0].menus[0].properties.content
+    isError: false
+    label: '#request.contextPath?html#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <h1></h1>
+      <table width="90%" border="0" collapse="" align="center">
+      <tbody>
+      <tr>
+      <td>
+      <h1><span style="font-size: 24pt; color: rgb(51, 51, 51);">Welcome to the Internal Service Request App</span></h1>
+      <p><span style="font-size: 14pt; color: #000000;">Manage, Approve and Track Interdepartmental Requests</span></p>
+      </td>
+      </tr>
+      <tr>
+      <td><img width="40%" src="#appResource.isrWelcomePage.png#"></td>
+      </tr>
+      <tr>
+      <td>
+      <p><br>This is an Internal Service Request (ISR) app that allows users to make and manage inter-departmental service requests.</p>
+      <p>Users will be able to make requests to specific head of department (HOD), who can then either resolve the request or assign the task to a subordinate for further action. This app also provides overall ISR reporting.&nbsp;</p>
+      <p>The Internal Service Request app has been built to make use of the new features and capababilities of Joget DX Enterprise.</p>
+      <p><strong>Tips to Joget administrator: </strong></p>
+      <ul>
+      <li>Input your Joget SMTP server configurations in <a href="#request.contextPath?html#/web/console/setting/general" target="_blank" rel="noopener">Web Console &gt; General Settings</a>&nbsp;to send email messages.</li>
+      <li>Input an email address for admin user in <a href="#request.contextPath?html#/web/console/directory/users" target="_blank" rel="noopener">Web Console &gt; Setup Users</a>&nbsp;for email notification to work.</li>
+      </ul>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+  - path: categories[0].menus[0].properties.content
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: |-
+      <h1></h1>
+      <table width="90%" border="0" collapse="" align="center">
+      <tbody>
+      <tr>
+      <td>
+      <h1><span style="font-size: 24pt; color: rgb(51, 51, 51);">Welcome to the Internal Service Request App</span></h1>
+      <p><span style="font-size: 14pt; color: #000000;">Manage, Approve and Track Interdepartmental Requests</span></p>
+      </td>
+      </tr>
+      <tr>
+      <td><img width="40%" src="#appResource.isrWelcomePage.png#"></td>
+      </tr>
+      <tr>
+      <td>
+      <p><br>This is an Internal Service Request (ISR) app that allows users to make and manage inter-departmental service requests.</p>
+      <p>Users will be able to make requests to specific head of department (HOD), who can then either resolve the request or assign the task to a subordinate for further action. This app also provides overall ISR reporting.&nbsp;</p>
+      <p>The Internal Service Request app has been built to make use of the new features and capababilities of Joget DX Enterprise.</p>
+      <p><strong>Tips to Joget administrator: </strong></p>
+      <ul>
+      <li>Input your Joget SMTP server configurations in <a href="#request.contextPath?html#/web/console/setting/general" target="_blank" rel="noopener">Web Console &gt; General Settings</a>&nbsp;to send email messages.</li>
+      <li>Input an email address for admin user in <a href="#request.contextPath?html#/web/console/directory/users" target="_blank" rel="noopener">Web Console &gt; Setup Users</a>&nbsp;for email notification to work.</li>
+      </ul>
+      </td>
+      </tr>
+      </tbody>
+      </table>
+  - path: categories[1].menus[0]
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.IntegrationOverviewTool
+    content: '[]'
+  - path: categories[1].menus[0].referencePage.elements[0].elements[0].elements[0].elements[0].properties.template
+    isError: false
+    label: '#datalist.size.isr_all_requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: "<!--{sampleWidth: '250px', tags: 'light-bg icon'}-->\r\n<div class=\"\
+      card shadow-sm flex-row row align-items-center align-items-stretch ms-0 me-0\"\
+      \ \r\n     style=\"height:{{height||150}};\r\n            background-color:{{bgColor||}};\
+      \ \r\n            background-image:url('{{bgImg||}}');\">\r\n    <div style=\"\
+      position: absolute;\r\n                top: 5px;\r\n                right: 5px;\r\
+      \n                z-index: 1;\r\n                width: unset;\r\n         \
+      \       padding: 0;\">\r\n        {{reload||<a class=\"reload\" style=\"color:inherit;\
+      \ opacity: 0.6; margin-left:5px;\" href=\"\"><i class=\"fas fa-redo\"></i></a>}}\r\
+      \n    </div>\r\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center\
+      \ \r\n                justify-content-center rounded-start\" \r\n         style=\"\
+      color:{{color||#2FB976}}; \r\n         font-size: 48px;\">\r\n        {{icon||<i\
+      \ class=\"far fa-list-alt\"></i>}}\r\n    </div>\r\n    <div class=\"stats-info\
+      \ py-3 col-8 text-end\">\r\n        <p style=\"font-size: 24px; \r\n       \
+      \           font-weight: 600; \r\n                  margin-bottom: 10px;\">\r\
+      \n            {{value||#datalist.size.isr_all_requests#}}</p>\r\n        <h4\
+      \ style=\"font-size: 12px;\r\n                   color: rgba(0,0,0,.6);\r\n\
+      \                   margin: 5px 0;\">\r\n            {{title||All Requests}}\r\
+      \n        </h4>\r\n    </div>\r\n</div>\r\n<!---->"
+  - path: categories[1].menus[0].referencePage.elements[0].elements[0].elements[0].elements[0].properties.value
+    isError: false
+    label: '#datalist.size.isr_all_requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#datalist.size.isr_all_requests#'
+  - path: categories[1].menus[0].referencePage.elements[0].elements[0].elements[1].elements[0].properties.template
+    isError: false
+    label: '#datalist.size.isr_new_requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: "<!--{sampleWidth: '250px', tags: 'light-bg icon'}-->\r\n<div class=\"\
+      card shadow-sm flex-row row align-items-center align-items-stretch ms-0 me-0\"\
+      \ \r\n     style=\"height:{{height||150}};\r\n            background-color:{{bgColor||}};\
+      \ \r\n            background-image:url('{{bgImg||}}');\">\r\n    <div style=\"\
+      position: absolute;\r\n                top: 5px;\r\n                right: 5px;\r\
+      \n                z-index: 1;\r\n                width: unset;\r\n         \
+      \       padding: 0;\">\r\n        {{reload||<a class=\"reload\" style=\"color:inherit;\
+      \ opacity: 0.6; margin-left:5px;\" href=\"\"><i class=\"fas fa-redo\"></i></a>}}\r\
+      \n    </div>\r\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center\
+      \ \r\n                justify-content-center rounded-start\" \r\n         style=\"\
+      color:{{color||#2FB976}}; \r\n         font-size: 48px;\">\r\n        {{icon||<i\
+      \ class=\"zmdi zmdi-plus-circle-o\"></i>}}\r\n    </div>\r\n    <div class=\"\
+      stats-info py-3 col-8 text-end\">\r\n        <p style=\"font-size: 24px; \r\n\
+      \                  font-weight: 600; \r\n                  margin-bottom: 10px;\"\
+      >\r\n            {{value||#datalist.size.isr_new_requests#}}</p>\r\n       \
+      \ <h4 style=\"font-size: 12px;\r\n                   color: rgba(0,0,0,.6);\r\
+      \n                   margin: 5px 0;\">\r\n            {{title||New Requests}}\r\
+      \n        </h4>\r\n    </div>\r\n</div>\r\n<!---->"
+  - path: categories[1].menus[0].referencePage.elements[0].elements[0].elements[1].elements[0].properties.value
+    isError: false
+    label: '#datalist.size.isr_new_requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#datalist.size.isr_new_requests#'
+  - path: categories[1].menus[0].referencePage.elements[0].elements[0].elements[2].elements[0].properties.template
+    isError: false
+    label: '#datalist.size.isr_rejected_requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: "<!--{sampleWidth: '250px', tags: 'light-bg icon'}-->\r\n<div class=\"\
+      card shadow-sm flex-row row align-items-center align-items-stretch ms-0 me-0\"\
+      \ \r\n     style=\"height:{{height||150}};\r\n            background-color:{{bgColor||}};\
+      \ \r\n            background-image:url('{{bgImg||}}');\">\r\n    <div style=\"\
+      position: absolute;\r\n                top: 5px;\r\n                right: 5px;\r\
+      \n                z-index: 1;\r\n                width: unset;\r\n         \
+      \       padding: 0;\">\r\n        {{reload||<a class=\"reload\" style=\"color:inherit;\
+      \ opacity: 0.6; margin-left:5px;\" href=\"\"><i class=\"fas fa-redo\"></i></a>}}\r\
+      \n    </div>\r\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center\
+      \ \r\n                justify-content-center rounded-start\" \r\n         style=\"\
+      color:{{color||#2FB976}}; \r\n         font-size: 48px;\">\r\n        {{icon||<i\
+      \ class=\"far fa-times-circle\"></i>}}\r\n    </div>\r\n    <div class=\"stats-info\
+      \ py-3 col-8 text-end\">\r\n        <p style=\"font-size: 24px; \r\n       \
+      \           font-weight: 600; \r\n                  margin-bottom: 10px;\">\r\
+      \n            {{value||#datalist.size.isr_rejected_requests#}}</p>\r\n     \
+      \   <h4 style=\"font-size: 12px;\r\n                   color: rgba(0,0,0,.6);\r\
+      \n                   margin: 5px 0;\">\r\n            {{title||Rejected Requests}}\r\
+      \n        </h4>\r\n    </div>\r\n</div>\r\n<!---->"
+  - path: categories[1].menus[0].referencePage.elements[0].elements[0].elements[2].elements[0].properties.value
+    isError: false
+    label: '#datalist.size.isr_rejected_requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#datalist.size.isr_rejected_requests#'
+  - path: categories[1].menus[0].referencePage.elements[0].elements[0].elements[3].elements[0].properties.template
+    isError: false
+    label: '#datalist.size.isr_resolved_requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: "<!--{sampleWidth: '250px', tags: 'light-bg icon'}-->\r\n<div class=\"\
+      card shadow-sm flex-row row align-items-center align-items-stretch ms-0 me-0\"\
+      \ \r\n     style=\"height:{{height||150}};\r\n            background-color:{{bgColor||}};\
+      \ \r\n            background-image:url('{{bgImg||}}');\">\r\n    <div style=\"\
+      position: absolute;\r\n                top: 5px;\r\n                right: 5px;\r\
+      \n                z-index: 1;\r\n                width: unset;\r\n         \
+      \       padding: 0;\">\r\n        {{reload||<a class=\"reload\" style=\"color:inherit;\
+      \ opacity: 0.6; margin-left:5px;\" href=\"\"><i class=\"fas fa-redo\"></i></a>}}\r\
+      \n    </div>\r\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center\
+      \ \r\n                justify-content-center rounded-start\" \r\n         style=\"\
+      color:{{color||#2FB976}}; \r\n         font-size: 48px;\">\r\n        {{icon||<i\
+      \ class=\"fas fa-check\"></i>}}\r\n    </div>\r\n    <div class=\"stats-info\
+      \ py-3 col-8 text-end\">\r\n        <p style=\"font-size: 24px; \r\n       \
+      \           font-weight: 600; \r\n                  margin-bottom: 10px;\">\r\
+      \n            {{value||#datalist.size.isr_resolved_requests#}}</p>\r\n     \
+      \   <h4 style=\"font-size: 12px;\r\n                   color: rgba(0,0,0,.6);\r\
+      \n                   margin: 5px 0;\">\r\n            {{title||Resolved Requests}}\r\
+      \n        </h4>\r\n    </div>\r\n</div>\r\n<!---->"
+  - path: categories[1].menus[0].referencePage.elements[0].elements[0].elements[3].elements[0].properties.value
+    isError: false
+    label: '#datalist.size.isr_resolved_requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#datalist.size.isr_resolved_requests#'
+  - path: categories[1].menus[0].referencePage.elements[1].elements[0].elements[0].elements[0].properties.optionCustomization
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: "{\n  title: {\n    left: 'left',\n\ttextStyle: {\n      color: 'rgba(0,\
+      \ 0, 0, 0.88)'\n    }\n  },\n  grid: {\n    top: 70,\n\tbottom: 0\n  },\n  xAxis:\
+      \ {\n    axisLabel: {\n      color: 'rgba(0, 0, 0, 0.88)'\n    },\n\tnameTextStyle:\
+      \ {\n      color: 'rgba(0, 0, 0, 0.88)',\n    }\n  },\n  yAxis: {\n    axisLabel:\
+      \ {\n      color: 'rgba(0, 0, 0, 0.88)'\n    },\n\tnameTextStyle: {\n      color:\
+      \ 'rgba(0, 0, 0, 0.88)',\n    }\n  },\n  series: [{\n    itemStyle: {\n    \
+      \  color: '#2FB976'\n    }\n  }],\n  tooltip: {\n    textStyle: {\n      color:\
+      \ 'rgba(0, 0, 0, 0.88)'\n    }\n  }\n};"
+  - path: categories[1].menus[0].referencePage.elements[1].elements[0].elements[1].elements[0].properties.optionCustomization
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: "{\n  title: {\n    left: 'left',\n\ttextStyle: {\n      color: 'rgba(0,\
+      \ 0, 0, 0.88)'\n    }\n  },\n  grid: {\n    top: 70,\n\tbottom: 0\n  },\n  color:\
+      \ ['#2a944c', '#56b467', '#8ed08c', '#bce4b3']\n};"
+  - path: categories[1].menus[0].referencePage.elements[2].elements[0].elements[0].properties.customFooter
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: |-
+      <script>
+      $(function(){
+          $('.exportlinks').hide();
+      });
+      </script>
+  - path: categories[1].menus[0].referencePage.elements[2].elements[0].elements[0].properties.customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: |-
+      <h3>
+        My Request
+      </h3>
+  - path: categories[2].menus[0].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[2].menus[0].properties.list-customHeader
+    isError: false
+    label: '#i18n.My Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.My Requests#</h2>
+  - path: categories[2].menus[0].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.My Requests#</h2>
+  - path: categories[2].menus[1].properties.list-customHeader
+    isError: false
+    label: '#i18n.My Requests Inbox#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.My Requests Inbox#</h2>
+  - path: categories[2].menus[1].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.My Requests Inbox#</h2>
+  - path: categories[2].menus[2]
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.IntegrationOverviewTool
+    content: my_requests
+  - path: categories[3].menus[0].properties.list-customHeader
+    isError: false
+    label: '#i18n.Requests Inbox#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.Requests Inbox#</h2>
+  - path: categories[3].menus[0].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.Requests Inbox#</h2>
+  - path: categories[3].menus[1].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[3].menus[1].properties.list-customHeader
+    isError: false
+    label: '#i18n.All Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.All Requests#</h2>
+  - path: categories[3].menus[1].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.All Requests#</h2>
+  - path: categories[4].menus[0].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[4].menus[0].properties.list-customHeader
+    isError: false
+    label: '#i18n.All Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.All Requests#</h2>
+  - path: categories[4].menus[0].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.All Requests#</h2>
+  - path: categories[4].menus[1].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[4].menus[1].properties.list-customHeader
+    isError: false
+    label: '#i18n.All New Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.All New Requests#</h2>
+  - path: categories[4].menus[1].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.All New Requests#</h2>
+  - path: categories[4].menus[2].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[4].menus[2].properties.list-customHeader
+    isError: false
+    label: '#i18n.All Reopened Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.All Reopened Requests#</h2>
+  - path: categories[4].menus[2].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.All Reopened Requests#</h2>
+  - path: categories[4].menus[3].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[4].menus[3].properties.list-customHeader
+    isError: false
+    label: '#i18n.All Resolved Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.All Resolved Requests#</h2>
+  - path: categories[4].menus[3].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.All Resolved Requests#</h2>
+  - path: categories[4].menus[4].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[4].menus[4].properties.list-customHeader
+    isError: false
+    label: '#i18n.All Assigned Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.All Assigned Requests#</h2>
+  - path: categories[4].menus[4].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.All Assigned Requests#</h2>
+  - path: categories[4].menus[5].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[4].menus[5].properties.list-customHeader
+    isError: false
+    label: '#i18n.All Rejected Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.All Rejected Requests#</h2>
+  - path: categories[4].menus[5].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.All Rejected Requests#</h2>
+  - path: categories[4].menus[6].properties.list-editLinkLabel
+    isError: false
+    label: '#i18n.View#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.View#'
+  - path: categories[4].menus[6].properties.list-customHeader
+    isError: false
+    label: '#i18n.All Verified Requests#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <h2>#i18n.All Verified Requests#</h2>
+  - path: categories[4].menus[6].properties.list-customHeader
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <h2>#i18n.All Verified Requests#</h2>
+  - path: categories[5].menus[0].properties.content
+    isError: false
+    label: '#i18n.page_about_richText#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: <p>#i18n.page_about_richText#</p>
+  - path: categories[5].menus[0].properties.content
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: <p>#i18n.page_about_richText#</p>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Home#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Downloads#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Cloud#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Academy#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Videos#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Marketplace#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Knowledge Base#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Answers#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Blog#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Mobile Android App#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Mobile iOS App#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Open Source Repository#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Joget Translations#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: '#i18n.Purchase Joget License#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[5].menus[1].properties.content
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: |-
+      <ul>
+      <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+      <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+      <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+      <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+      <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+      <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+      <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+      <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+      <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+      <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+      <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+      <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+      <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+      </ul>
+  - path: categories[6].menus[0].properties.customFooter
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: "<script>\r\n$(function(){\r\n    $('.exportlinks').hide();\r\n});\r\n\
+      </script>"
+  - path: categories[6].menus[1].properties.list-customFooter
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: "<script>\r\n$(function(){\r\n    $('.exportlinks').hide();\r\n});\r\n\
+      </script>"
+  - path: categories[6].menus[2].properties.list-customFooter
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.WebCodingOverviewTool
+    content: "<script>\r\n$(function(){\r\n    $('.exportlinks').hide();\r\n});\r\n\
+      var _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\r\n</script>"
+  - path: properties.welcomeMessage
+    isError: false
+    label: '#date.EEE, d MMM yyyy#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#date.EEE, d MMM yyyy#'
+  - path: properties.name
+    isError: false
+    label: '#i18n.applicationName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.applicationName#'
+  - path: setting.properties.theme.properties.dx8backgroundImage
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.AppResourcesOverviewTool
+    content: '#appResource.isrWelcomePage.png#'
+  - path: setting.properties.theme.properties.dx8backgroundImage
+    isError: false
+    label: '#appResource.isrWelcomePage.png#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#appResource.isrWelcomePage.png#'
+  - path: setting.properties.userview_thumbnail
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.AppResourcesOverviewTool
+    content: '#appResource.isr_appIcon.png#'
+  - path: setting.properties.userview_thumbnail
+    isError: false
+    label: '#appResource.isr_appIcon.png#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#appResource.isr_appIcon.png#'
+  lastModifiedDate: May 31, 2026, 2:01:43 PM
+agent:AI-testmcp:
+  data: [
+    ]
+  lastModifiedDate: Jun 8, 2026, 2:36:04 PM
+form:isr_request_detail:
+  data:
+  - path: elements[1].elements[0].elements[1].properties.loadBinder.properties.script
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.BeanShellOverviewTool
+    content: return null;
+  lastModifiedDate: May 31, 2026, 2:01:38 PM
+theme:theme_test:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:43 PM
+form:isr_verify_resolved:
+  data:
+  - path: elements[1].elements[0].elements[1].properties.value
+    isError: false
+    label: '#currentUser.FirstName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.FirstName# #currentUser.LastName#'
+  - path: elements[1].elements[0].elements[1].properties.value
+    isError: false
+    label: '#currentUser.LastName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.FirstName# #currentUser.LastName#'
+  - path: elements[1].elements[0].elements[2].properties.value
+    isError: false
+    label: '#date.yyyy-MM-dd#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#date.yyyy-MM-dd#'
+  - path: elements[1].elements[0].elements[3].properties.loadBinder.properties.script
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.BeanShellOverviewTool
+    content: return null;
+  lastModifiedDate: May 31, 2026, 2:01:39 PM
+agent:AI-rnd:
+  data: [
+    ]
+  lastModifiedDate: Jun 8, 2026, 12:07:49 PM
+datalist:isr_verified_requests:
+  data: [
+    ]
+  lastModifiedDate: May 31, 2026, 2:01:42 PM
+form:isr_resolve_request:
+  data:
+  - path: elements[1].elements[0].elements[1].properties.value
+    isError: false
+    label: '#currentUser.FirstName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.FirstName# #currentUser.LastName#'
+  - path: elements[1].elements[0].elements[1].properties.value
+    isError: false
+    label: '#currentUser.LastName#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#currentUser.FirstName# #currentUser.LastName#'
+  - path: elements[1].elements[0].elements[2].properties.value
+    isError: false
+    label: '#date.yyyy-MM-dd#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#date.yyyy-MM-dd#'
+  - path: elements[1].elements[0].elements[3].properties.optionsBinder.properties.emptyLabel
+    isError: false
+    label: '#i18n.Select#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: '#i18n.Select#'
+  - path: elements[1].elements[0].elements[4].properties.loadBinder.properties.script
+    isError: false
+    label: ''
+    tool: org.joget.apps.app.lib.BeanShellOverviewTool
+    content: return null;
+  lastModifiedDate: May 31, 2026, 2:01:39 PM
+process:isr:
+  data:
+  - path: activityPlugins.isr::send_verified_notification.properties.subject
+    isError: false
+    label: '#form.j_isr_request.ref_id#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: 'Your ISR request number #form.j_isr_request.ref_id# has been verified
+      by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.'
+  - path: activityPlugins.isr::send_verified_notification.properties.subject
+    isError: false
+    label: '#form.j_isr_request.verifier#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: 'Your ISR request number #form.j_isr_request.ref_id# has been verified
+      by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.'
+  - path: activityPlugins.isr::send_verified_notification.properties.subject
+    isError: false
+    label: '#form.j_isr_request.dateVerified#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: 'Your ISR request number #form.j_isr_request.ref_id# has been verified
+      by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.'
+  - path: activityPlugins.isr::send_verified_notification.properties.message
+    isError: false
+    label: '#form.j_isr_request.ref_id#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      Your ISR request number #form.j_isr_request.ref_id# has been verified by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.
+
+      Email notification generated by Joget Workflow.
+  - path: activityPlugins.isr::send_verified_notification.properties.message
+    isError: false
+    label: '#form.j_isr_request.verifier#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      Your ISR request number #form.j_isr_request.ref_id# has been verified by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.
+
+      Email notification generated by Joget Workflow.
+  - path: activityPlugins.isr::send_verified_notification.properties.message
+    isError: false
+    label: '#form.j_isr_request.dateVerified#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      Your ISR request number #form.j_isr_request.ref_id# has been verified by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.
+
+      Email notification generated by Joget Workflow.
+  - path: activityPlugins.isr::send_rejected_notifiction.properties.subject
+    isError: false
+    label: '#form.j_isr_request.ref_id#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: 'Your ISR request number #form.j_isr_request.ref_id# has been rejected
+      by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.'
+  - path: activityPlugins.isr::send_rejected_notifiction.properties.subject
+    isError: false
+    label: '#form.j_isr_request.verifier#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: 'Your ISR request number #form.j_isr_request.ref_id# has been rejected
+      by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.'
+  - path: activityPlugins.isr::send_rejected_notifiction.properties.subject
+    isError: false
+    label: '#form.j_isr_request.dateVerified#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: 'Your ISR request number #form.j_isr_request.ref_id# has been rejected
+      by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.'
+  - path: activityPlugins.isr::send_rejected_notifiction.properties.message
+    isError: false
+    label: '#form.j_isr_request.ref_id#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      Your ISR request number #form.j_isr_request.ref_id# has been rejected by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.
+
+      Email notification generated by Joget Workflow.
+  - path: activityPlugins.isr::send_rejected_notifiction.properties.message
+    isError: false
+    label: '#form.j_isr_request.verifier#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      Your ISR request number #form.j_isr_request.ref_id# has been rejected by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.
+
+      Email notification generated by Joget Workflow.
+  - path: activityPlugins.isr::send_rejected_notifiction.properties.message
+    isError: false
+    label: '#form.j_isr_request.dateVerified#'
+    tool: org.joget.apps.app.lib.HashVariableOverviewTool
+    content: |-
+      Your ISR request number #form.j_isr_request.ref_id# has been rejected by #form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#.
+
+      Email notification generated by Joget Workflow.
+  lastModifiedDate: Jan 11, 2026, 2:06:38 AM
+properties:
+  id: APP_OVERVIEW_DEFINITION

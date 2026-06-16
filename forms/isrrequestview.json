@@ -1,0 +1,227 @@
+{
+    "elements": [
+        {
+            "elements": [
+                {
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.IdGeneratorField",
+                            "properties": {
+                                "hidden": "true",
+                                "format": "????",
+                                "workflowVariable": "",
+                                "envVariable": "counter",
+                                "id": "ref_id",
+                                "label": "Ref Id"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field16",
+                                "label": "Subject",
+                                "value": "##form.j_isr_request.ref_id#: #form.j_isr_request.subject#"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field16_1",
+                                "label": "Status",
+                                "value": "<span style=\"font-size:150%;\">#form.j_isr_request.status#<\/span>\n"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field16_1",
+                                "label": "Describe Issue",
+                                "value": "#form.j_isr_request.description#\n"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field16_2",
+                                "label": "Priority",
+                                "value": "#form.j_isr_request.priority#\n"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field16_3",
+                                "label": "Approver",
+                                "value": "#form.j_isr_request.attention#"
+                            }
+                        }
+                    ],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "elements": [
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field16_2",
+                                "label": "Due Date",
+                                "value": "#form.j_isr_request.duedate#"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field16_4",
+                                "label": "Requested By",
+                                "value": "#form.j_isr_request.requester_name# (#form.j_isr_request.requester#) on #form.j_isr_request.createdDate#"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field14",
+                                "label": "Verified By",
+                                "value": "#form.j_isr_request.verifier# on #form.j_isr_request.dateVerified#"
+                            }
+                        },
+                        {
+                            "className": "org.joget.apps.form.lib.CustomHTML",
+                            "properties": {
+                                "autoPopulate": "",
+                                "id": "field16_3",
+                                "label": "Department",
+                                "value": "#form.j_isr_request.department_name#\n"
+                            }
+                        }
+                    ],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "id": "section1",
+                "label": "Service Request Details",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        },
+        {
+            "elements": [
+                {
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.FileUpload",
+                        "properties": {
+                            "permissionType": "",
+                            "padding": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "multiple": "true",
+                            "maxSize": "",
+                            "label": "Document<br/>Attachments 1",
+                            "removeFile": "true",
+                            "size": "",
+                            "readonly": "",
+                            "attachment": "true",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "attachment1",
+                            "fileType": ""
+                        }
+                    }],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "49%"}
+                },
+                {
+                    "elements": [{
+                        "className": "org.joget.apps.form.lib.FileUpload",
+                        "properties": {
+                            "permissionType": "",
+                            "padding": "",
+                            "maxSizeMsg": "File size limit exceeded",
+                            "validator": {
+                                "className": "",
+                                "properties": {}
+                            },
+                            "multiple": "true",
+                            "maxSize": "",
+                            "label": "Document<br/>Attachments 2",
+                            "removeFile": "",
+                            "size": "",
+                            "readonly": "",
+                            "attachment": "true",
+                            "fileTypeMsg": "Invalid file type",
+                            "id": "attachment2",
+                            "fileType": ""
+                        }
+                    }],
+                    "className": "org.joget.apps.form.model.Column",
+                    "properties": {"width": "49%"}
+                }
+            ],
+            "className": "org.joget.apps.form.model.Section",
+            "properties": {
+                "loadBinder": {
+                    "className": "",
+                    "properties": {}
+                },
+                "permission": {
+                    "className": "",
+                    "properties": {}
+                },
+                "id": "section2",
+                "label": "",
+                "storeBinder": {
+                    "className": "",
+                    "properties": {}
+                }
+            }
+        }
+    ],
+    "className": "org.joget.apps.form.model.Form",
+    "properties": {
+        "noPermissionMessage": "",
+        "loadBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "name": "ISR Request View Original",
+        "description": "",
+        "postProcessorRunOn": "both",
+        "permission": {
+            "className": "",
+            "properties": {}
+        },
+        "id": "isrrequestview",
+        "postProcessor": {
+            "className": "",
+            "properties": {}
+        },
+        "storeBinder": {
+            "className": "org.joget.apps.form.lib.WorkflowFormBinder",
+            "properties": {}
+        },
+        "tableName": "j_isr_request"
+    }
+}

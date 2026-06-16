@@ -1,0 +1,19 @@
+elements:
+- className: org.joget.api.lib.AppListAPI
+  properties:
+    listDefId: isr_all_requests
+    id: 812A212A-A7E1-44EF-6D13-545959C0A61F
+    label: all request
+    ENABLED_PATHS: get:/
+properties:
+  licenseUrl: ''
+  contactEmail: ''
+  contactName: ''
+  name: internal service request api
+  description: internal service request api
+  externalDocUrl: ''
+  id: API-bdf8baf6-8a89-4eb5-bc50-7f127fc03768
+  termsOfService: ''
+  licenseName: ''
+  externalDocDesc: ''
+  enableInternal: ''

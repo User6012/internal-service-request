@@ -1,0 +1,128 @@
+elements:
+- elements:
+  - elements:
+    - className: org.joget.apps.form.lib.SubForm
+      properties:
+        parentSubFormId: ''
+        readonly: ''
+        loadBinder:
+          className: org.joget.apps.form.lib.WorkflowFormBinder
+          properties: {
+            }
+        formDefId: isrrequestview
+        noframe: ''
+        subFormParentId: ''
+        id: request_detail
+        label: ''
+        storeBinder:
+          className: org.joget.apps.form.lib.WorkflowFormBinder
+          properties: {
+            }
+        readonlyLabel: ''
+    className: org.joget.apps.form.model.Column
+    properties:
+      width: 100%
+  className: org.joget.apps.form.model.Section
+  properties:
+    visibilityControl: ''
+    loadBinder:
+      className: ''
+      properties: '{}'
+    id: section1
+    label: ''
+    storeBinder:
+      className: ''
+      properties: '{}'
+    visibilityValue: ''
+- elements:
+  - elements:
+    - className: org.joget.apps.form.lib.Grid
+      properties:
+        validateMaxRow: ''
+        readonly: 'true'
+        loadBinder:
+          className: org.joget.plugin.enterprise.MultirowFormBinder
+          properties:
+            formDefId: isr_remark
+            foreignKey: request_id
+        validateMinRow: ''
+        options:
+        - label: Name
+          value: name
+        - label: Remarks
+          value: remarks
+        - label: Date
+          value: dateCreated
+        validator:
+          className: ''
+          properties: {
+            }
+        errorMessage: Invalid number of rows
+        id: fgR
+        label: ''
+        storeBinder:
+          className: ''
+          properties: {
+            }
+    - className: org.joget.apps.form.lib.SubForm
+      properties:
+        parentSubFormId: last_remark
+        readonly: ''
+        loadBinder:
+          className: org.joget.apps.form.lib.BeanShellFormBinder
+          properties:
+            useAjax: ''
+            script: return null;
+        formDefId: isr_remark
+        noframe: 'true'
+        subFormParentId: request_id
+        id: sfAR
+        label: ''
+        storeBinder:
+          className: org.joget.apps.form.lib.WorkflowFormBinder
+          properties: {
+            }
+        readonlyLabel: ''
+    className: org.joget.apps.form.model.Column
+    properties:
+      width: 100%
+  className: org.joget.apps.form.model.Section
+  properties:
+    loadBinder:
+      className: ''
+      properties: {
+        }
+    permission:
+      className: ''
+      properties: {
+        }
+    id: section2
+    label: Remarks History
+    storeBinder:
+      className: ''
+      properties: {
+        }
+className: org.joget.apps.form.model.Form
+properties:
+  noPermissionMessage: ''
+  loadBinder:
+    className: org.joget.apps.form.lib.WorkflowFormBinder
+    properties: {
+      }
+  name: ISR Request View With Remarks
+  description: ''
+  postProcessorRunOn: both
+  permission:
+    className: ''
+    properties: {
+      }
+  id: isr_request_detail
+  postProcessor:
+    className: ''
+    properties: {
+      }
+  storeBinder:
+    className: org.joget.apps.form.lib.WorkflowFormBinder
+    properties: {
+      }
+  tableName: j_isr_request

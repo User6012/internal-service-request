@@ -1,0 +1,51 @@
+agent:
+  llm: [
+    ]
+  prompt: [
+    ]
+className: org.joget.ai.agent.AgentBuilder
+properties:
+  parallelToolCalls: ''
+  contextWindowMaxMessages: '0'
+  maxIterations: '50'
+  contextWindowWarnThresholdPct: '80'
+  inputs:
+  - name: query
+    description: query
+    label: query
+    type: textfield
+  description: ''
+  agentDebugMode: ''
+  parallelToolCallThreads: '4'
+  llmRetryInitialDelayMs: '1000'
+  logo: ''
+  id: AI-testmcp
+  llmSocketTimeoutSeconds: '120'
+  llmConnectTimeoutSeconds: '30'
+  contextWindowStrategy: TRUNCATE
+  variables: [
+    ]
+  contextWindowPreserveSystem: 'true'
+  contextWindowPreserveFirst: 'true'
+  version: blank
+  llmRetryMaxAttempts: '3'
+  enableTokenStreaming: ''
+  name: testmcp
+  contextWindowMaxChars: '400000'
+  maxToolCallDepth: '10'
+  contextWindowEnabled: 'true'
+  llmRetryMaxDelayMs: '30000'
+tasks:
+- enhancer: [
+    ]
+  decision: [
+    ]
+  guard: [
+    ]
+  prompt: [
+    ]
+  properties:
+    id: 1ddf223d-7289-4f54-9548-d5043f70b9d2
+    label: First Task
+  tool: [
+    ]

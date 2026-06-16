@@ -1,0 +1,464 @@
+theme:
+  className: org.joget.plugin.enterprise.BuilderTheme.theme_ISRTheme
+  properties:
+    css: ''
+    global-itemPaddingBlock: 5px
+    dx8-light-sidebar-navActiveIconColor: '#1677FF'
+    global-contentPaddingInline: 40px
+    global-controlHeight: 40px
+    dx8borderColor: '#4977c1'
+    dx8-dark-header-headerFontColor: '#FFFFFF'
+    dx8-dark-header-navActiveLinkColor: '#FFFFFF'
+    global-itemMarginInline: 8px
+    dx8-light-sidebar-navActiveLinkColor: '#1677FF'
+    dx8-light-header-navActiveLinkBackground: '#F9F9F9'
+    disableHelpGuide: ''
+    dx8-dark-sidebar-navLinkIcon: '#ffffff'
+    dx8-dark-header-navBadge: '#ff4d4f'
+    horizontal_menu: dark-sidebar
+    global-sidebarWidth: 295px
+    profile: ''
+    dx8-dark-sidebar-headerFontColor: '#ffffff'
+    homeAttractBanner: ''
+    global-headerPadding: 20px
+    homeUrl: ''
+    dx8footerColor: '#122064'
+    subheader: ''
+    dx8contentbackground: '#ffffff'
+    org.joget.theme.lib.RadioComponent:
+      prefix: jgt-radio-
+      className: org.joget.theme.lib.RadioComponent
+      properties:
+        colorPrimary: '#2056be'
+        padding: 12px
+        colorText: '#4977c1'
+        colorPrimaryHover: '#5897de'
+        colorBgContainer: '#e1ecfc'
+        colorBgContainerDisabled: '#bfd9f7'
+        colorBorder: '#4977c1'
+        colorWhite: '#ffffff'
+        lineWidth: 1.3px
+        colorPrimaryBorder: '#b3cee2'
+        colorTextDisabled: '#b3cee2'
+        radioSize: 18px
+        lineType: solid
+        fontSize: 15px
+        lineHeight: '1.6'
+    org.joget.theme.lib.UploadComponent:
+      prefix: jgt-upload-
+      className: org.joget.theme.lib.UploadComponent
+      properties:
+        colorPrimary: '#2056be'
+        colorText: '#2056be'
+        borderRadiusLG: 12px
+        colorError: '#b71c1c'
+        colorTextDescription: '#4977c1'
+        colorBorder: '#b3cee2'
+        controlHeightLG: 42px
+        lineWidth: 1.2px
+        controlItemBgHover: '#bfd9f7'
+        lineType: dashed
+        colorFillAlter: '#e7eaf6'
+        fontSize: 15px
+        lineHeight: '1.6'
+    dx8-dark-sidebar-navBadge: '#ffdf4b'
+    dx8-dark-header-navActiveIconColor: '#FFFFFF'
+    dx8background: '#e7eaf6'
+    org.joget.theme.lib.PaginationComponent:
+      prefix: jgt-pg-
+      className: org.joget.theme.lib.PaginationComponent
+      properties:
+        colorPrimary: '#2056be'
+        padding: 7px
+        colorText: '#2056be'
+        margin: 8px
+        colorPrimaryHover: '#5897de'
+        colorBgContainer: '#ffffff'
+        fontWeightStrong: '700'
+        itemActiveColorDisabled: '#b3cee2'
+        lineWidth: 1.3px
+        borderRadius: 8px
+        itemActiveBgDisabled: '#e1ecfc'
+        lineType: solid
+        colorBgTextHover: '#e7eaf6'
+        fontSize: 15px
+        itemSize: 34px
+        controlHeight: 34px
+        itemActiveBg: '#e1ecfc'
+    dx8-light-sidebar-navBadge: '#ff4d4f'
+    org.joget.theme.lib.ListComponent:
+      prefix: jgt-list-
+      className: org.joget.theme.lib.ListComponent
+      properties:
+        avatarMarginRight: 17px
+        contentBg: '#e7eaf6'
+        colorText: '#1e3a6b'
+        itemPadding: 14px 22px
+        borderRadius: 10px
+        lineType: solid
+        descriptionFontSize: 15px
+        colorTextDescription: '#4977c1'
+        fontSize: 15px
+        lineHeight: '1.6'
+        colorBorder: '#b3cee2'
+        lineWidth: 1.3px
+    dx8-dark-header-navBackground: '#001529'
+    js: ''
+    global-itemPaddingInline: 50px
+    urlsToCache: ''
+    userImage: ''
+    dx8-dark-header-navLinkBackground: '#001529'
+    fontControl: ''
+    global-iconSize: 16px
+    global-lineHeight: '1.6'
+    dx8-light-sidebar-headerColor: '#f5f5f5'
+    org.joget.theme.lib.TableComponent:
+      prefix: jgt-table-
+      className: org.joget.theme.lib.TableComponent
+      properties:
+        borderColor: '#b3cee2'
+        rowHoverBg: '#e7eaf6'
+        colorText: '#2056be'
+        cellPaddingInline: 18px
+        colorBgContainer: '#ffffff'
+        fontWeightStrong: '700'
+        headerSplitColor: '#b3cee2'
+        headerSortHoverBg: '#bfd9f7'
+        headerSortActiveBg: '#bfd9f7'
+        rowSelectedBg: '#e1ecfc'
+        lineWidth: 1.3px
+        headerColor: '#2056be'
+        headerBg: '#bfd9f7'
+        borderRadius: 10px
+        cellPaddingBlock: 18px
+        lineType: solid
+        headerBorderRadius: 12px
+        lineHeight: '1.6'
+        cellFontSize: 15px
+    global-boxShadowSecondary: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px rgba(0,
+      0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05)
+    dx8-light-header-headerColor: '#FFFFFF'
+    org.joget.theme.lib.CardComponent:
+      prefix: jgt-card-
+      className: org.joget.theme.lib.CardComponent
+      properties:
+        padding: 24px
+        colorText: '#2056be'
+        borderRadiusLG: 12px
+        colorBgContainer: '#ffffff'
+        fontWeightStrong: '700'
+        colorTextSubtitle: '#5897de'
+        colorTextDescription: '#4977c1'
+        boxShadowCard: '0 4px 16px 0 #bfd9f788'
+        fontSizeLG: 16px
+        lineWidth: 1.5px
+        headerBg: '#bfd9f7'
+        headerFontSize: 18px
+        colorTextTitle: '#2056be'
+        fontHeight: '22'
+        lineType: solid
+        colorBorderSecondary: '#b3cee2'
+        lineHeight: '1.6'
+        colorTextHeading: '#2056be'
+        headerHeight: 56px
+    dx8footerBackground: '#b3cee2'
+    global-borderRadius: 8px
+    dx8-light-header-headerFontColor: '#252F4A'
+    dx8-dark-sidebar-navActiveIconColor: '#2056be'
+    dx8-dark-sidebar-headerColor: '#2056be'
+    dx8-light-sidebar-navBackground: '#FFFFFF'
+    org.joget.theme.lib.CheckboxComponent:
+      prefix: jgt-cb-
+      className: org.joget.theme.lib.CheckboxComponent
+      properties:
+        colorPrimary: '#2056be'
+        padding: 8px
+        colorText: '#1e3a6b'
+        colorPrimaryHover: '#5897de'
+        borderRadiusSM: 6px
+        colorBgContainer: '#e1ecfc'
+        controlInteractiveSize: 18px
+        colorBgContainerDisabled: '#bfd9f7'
+        colorBorder: '#4977c1'
+        colorWhite: '#ffffff'
+        lineWidth: 1.3px
+        colorPrimaryBorder: '#b3cee2'
+        colorTextDisabled: '#b3cee2'
+        lineType: solid
+        fontSize: 15px
+        lineHeight: '1.6'
+    dx8-dark-header-navScrollbarThumb: '#F1F1F4'
+    inbox: current
+    global-footerPadding: 16px 50px
+    dx8-light-sidebar-navScrollbarThumb: '#F1F1F4'
+    hideSidebarUserMenu: ''
+    primaryColor: '#2056be'
+    global-itemMarginBlock: 4px
+    disablePush: 'true'
+    removeAssignmentTitle: ''
+    dx8-dark-sidebar-navBackground: '#4977c1'
+    org.joget.theme.lib.DropdownComponent:
+      prefix: jgt-dd-
+      className: org.joget.theme.lib.DropdownComponent
+      properties:
+        controlItemBgHover: '#b3cee2'
+        paddingBlock: 7px
+        padding: 7px
+        colorText: '#2056be'
+        boxShadowSecondary: '0 4px 24px #b3cee244'
+        borderRadius: 10px
+        controlPaddingHorizontal: 18px
+        fontSize: 15px
+        lineHeight: '1.6'
+        colorBgElevated: '#e1ecfc'
+    global-footerHeight: 54px
+    dx8-light-sidebar-navLinkBackground: '#FFFFFF'
+    dx8-dark-sidebar-navActiveLinkColor: '#2056be'
+    shortcutLinkLabel: Shortcut
+    logo: ''
+    enableResponsiveSwitch: 'true'
+    dx8-dark-subMenuColor: '#e1ecfc'
+    fav_icon: ''
+    org.joget.theme.lib.WizardComponent:
+      prefix: jgt-wizard-
+      className: org.joget.theme.lib.WizardComponent
+      properties:
+        colorPrimary: '#2056be'
+        titleLineHeight: 32px
+        colorText: '#1e3a6b'
+        colorSplit: '#b3cee2'
+        borderRadius: 50%
+        lineType: dashed
+        colorTextDescription: '#4977c1'
+        fontSize: 15px
+        lineHeight: '1.6'
+        colorTextLightSolid: '#ffffff'
+        controlHeight: 33px
+        lineWidth: 1.3px
+    global-padding: 20px
+    disablePwa: 'true'
+    dx8-light-subMenuColor: '#001529'
+    dx8backgroundImage: '#appResource.isrWelcomePage.png#'
+    dx8-dark-header-navLinkIcon: rgba(255, 255, 255, 0.65)
+    dx8-light-sidebar-navActiveLinkBackground: '#E6F4FF'
+    global-headerHeight: 64px
+    dx8-dark-sidebar-navLinkColor: '#ffffff'
+    org.joget.theme.lib.BreadcrumbComponent:
+      prefix: jgt-breadcrumb-
+      className: org.joget.theme.lib.BreadcrumbComponent
+      properties:
+        separatorColor: '#2056be'
+        padding: 7px
+        colorText: '#1e3a6b'
+        separatorMargin: 7px
+        linkColor: '#2056be'
+        bgColor: '#bfd9f7'
+        borderRadius: 6px
+        fontHeight: 22px
+        colorBgTextHover: '#e7eaf6'
+        linkHoverColor: '#2056be'
+        fontSize: 15px
+        lineHeight: '1.6'
+        paddingBlockStart: 18px
+        iconFontSize: 16px
+        fontWeight: '500'
+    global-contentWidth: 1580px
+    global-fontSize: 15px
+    org.joget.theme.lib.TabComponent:
+      prefix: jgt-tab-
+      className: org.joget.theme.lib.TabComponent
+      properties:
+        itemColor: '#2056be'
+        colorBgContainer: '#e1ecfc'
+        colorBorder: '#b3cee2'
+        cardBg: '#bfd9f7'
+        cardHeight: 42px
+        cardGutter: 3px
+        borderRadius: 10px
+        titleFontSize: 15px
+        lineType: solid
+        itemHoverColor: '#4977c1'
+        lineHeight: '1.6'
+        horizontalMargin: 0 0 16px 0
+        cardPadding: 10px 21px
+        itemSelectedColor: '#2056be'
+        fontWeight: '600'
+    dx8-light-header-navLinkBackground: '#FFFFFF'
+    dx8-light-sidebar-navBadgeText: '#ffffff'
+    dx8-dark-header-navBadgeText: '#ffffff'
+    dx8-light-header-navScrollbarThumb: '#F1F1F4'
+    userMenu: [
+      ]
+    org.joget.theme.lib.InputComponent:
+      prefix: jgt-input-
+      className: org.joget.theme.lib.InputComponent
+      properties:
+        activeBg: '#e1ecfc'
+        hoverBg: '#bfd9f7'
+        colorText: '#1e3a6b'
+        inputFontSize: 15px
+        paddingInline: 15px
+        activeShadow: '0 0 0 2px #4977c144'
+        colorBgContainer: '#ffffff'
+        colorBgContainerDisabled: '#e1ecfc'
+        colorTextDescription: '#2056be'
+        colorBorder: '#4977c1'
+        lineWidth: 1.3px
+        colorIconHover: '#4977c1'
+        paddingBlock: 7px
+        colorIcon: '#4977c1'
+        colorTextDisabled: '#b3cee2'
+        borderRadius: 8px
+        activeBorderColor: '#2056be'
+        lineType: solid
+        hoverBorderColor: '#2056be'
+        colorTextPlaceholder: '#b3cee2'
+        fontSizeIcon: 13px
+        lineHeight: '1.6'
+        controlHeight: 38px
+    dx8-light-header-navLinkIcon: '#4B5675'
+    dx8-light-sidebar-headerFontColor: rgba(0, 0, 0, 0.88)
+    org.joget.theme.lib.TypographyComponent:
+      prefix: jgt-tpgh-
+      className: org.joget.theme.lib.TypographyComponent
+      properties:
+        colorLinkHover: '#4977c1'
+        colorText: '#1e3a6b'
+        googleFontAPIKey: ''
+        lineHeightHeading2: '1.24'
+        fontWeightStrong: '700'
+        lineHeightHeading1: '1.18'
+        colorTextDescription: '#4977c1'
+        fontSizeHeading1: 42px
+        lineHeightHeading5: '1.55'
+        lineHeightHeading4: '1.44'
+        lineHeightHeading3: '1.35'
+        googleFont: ''
+        titleMarginTop: 0px
+        colorLink: '#2056be'
+        colorTextDisabled: '#b3cee2'
+        fontSizeHeading3: 27px
+        fontSizeHeading2: 32px
+        fontSizeHeading5: 18px
+        fontSizeHeading4: 21px
+        fontSize: 15px
+        lineHeight: '1.6'
+        colorLinkActive: '#5897de'
+        colorTextHeading: '#2056be'
+        titleMarginBottom: 0.6em
+    dx8-light-header-navLinkColor: '#4B5675'
+    shortcut: [
+      ]
+    global-contentPaddingInlineSM: 20px
+    org.joget.theme.lib.AccordionComponent:
+      prefix: jgt-acc-
+      className: org.joget.theme.lib.AccordionComponent
+      properties:
+        contentBg: '#f8bbd0'
+        colorText: '#c2185b'
+        headerPadding: 13px 18px
+        headerBg: '#f06292'
+        borderRadius: 12px
+        contentPadding: 7px 18px
+        lineType: solid
+        fontSize: 16px
+        lineHeight: '1.6'
+        colorTextHeading: '#c2185b'
+        colorBorder: '#f06292'
+        lineWidth: 1.5px
+    global-itemHeight: 40px
+    global-iconMarginInline: 10px
+    org.joget.theme.lib.ButtonComponent:
+      prefix: jgt-btn-
+      className: org.joget.theme.lib.ButtonComponent
+      properties:
+        colorLinkHover: '#5897de'
+        colorPrimaryHover: '#5897de'
+        primaryColor: '#2056be'
+        contentFontSize: 16px
+        colorBgContainerDisabled: '#bfd9f7'
+        colorError: '#b71c1c'
+        paddingBlock: 10px
+        defaultBg: '#e1ecfc'
+        primaryShadow: '0 2px 0 #bfd9f788'
+        defaultColor: '#2056be'
+        defaultShadow: '0 2px 0 #bfd9f722'
+        defaultHoverColor: '#358cff'
+        colorErrorActive: '#358cff'
+        colorTextLightSolid: '#ffffff'
+        fontWeight: '600'
+        colorPrimary: '#358cff'
+        defaultActiveColor: '#2056be'
+        contentLineHeight: '1.5'
+        paddingInline: 22px
+        defaultHoverBorderColor: '#5897de'
+        defaultActiveBg: '#bfd9f7'
+        dangerShadow: '0 2px 0 #2056be11'
+        dangerColor: '#fff'
+        colorErrorHover: '#2056be'
+        defaultBorderColor: '#b3cee2'
+        colorLink: '#5897de'
+        defaultHoverBg: '#e7eaf6'
+        colorTextDisabled: '#b3cee2'
+        borderRadius: 8px
+        defaultActiveBorderColor: '#2056be'
+        colorPrimaryActive: '#1e3a6b'
+        colorLinkActive: '#5897de'
+        controlHeight: 40px
+        borderColorDisabled: '#b3cee2'
+        linkHoverBg: '#e1ecfc'
+    org.joget.theme.lib.FormComponent:
+      prefix: jgt-form-
+      className: org.joget.theme.lib.FormComponent
+      properties:
+        fieldWidth: 70%
+        labelFloat: left
+        borderRadiusLG: 12px
+        colorTextDescription: '#4977c1'
+        labelWidth: 30%
+        lineWidth: 1.5px
+        headerFontWeight: '700'
+        labelRequiredMarkColor: '#2056be'
+        headerFontSize: 17px
+        controlOutline: '#b3cee244'
+        lineType: solid
+        controlOutlineWidth: 2px
+        fontWeight: '700'
+        colorText: '#2056be'
+        labelMarginInlineEnd: 15px
+        labelFontSize: 15px
+        colorBgContainer: '#e1ecfc'
+        headerFontHeight: '22'
+        colorBorder: '#b3cee2'
+        labelHeight: auto
+        labelAlignTop: start
+        headerBg: '#bfd9f7'
+        itemMarginBottom: 24px
+        labelAlign: end
+        sectionPaddingBottom: 20px
+        marginBottom: 10px
+        lineHeight: '1.6'
+        colorTextHeading: '#2056be'
+        headerHeight: 56px
+        headerPaddingInline: 24px
+        fieldFloat: left
+    dx8-dark-header-headerColor: '#001529'
+    global-borderRadiusLG: 12px
+    dx8-light-subMenuBgColor: '#fafafa'
+    dx8-dark-sidebar-navLinkBackground: '#4977c1'
+    dx8-dark-sidebar-navBadgeText: '#1e3a6b'
+    dx8-dark-sidebar-navScrollbarThumb: '#b3cee2'
+    dx8-dark-header-navLinkColor: rgba(255, 255, 255, 0.65)
+    dx8-light-sidebar-navLinkIcon: rgba(0, 0, 0, 0.88)
+    dx8-light-header-navBadgeText: '#ffffff'
+    subfooter: ''
+    dx8-light-header-navBackground: '#FFFFFF'
+    dx8-light-header-navBadge: '#ff4d4f'
+    dx8-dark-subMenuBgColor: '#2056be'
+    dx8-dark-sidebar-navActiveLinkBackground: '#e1ecfc'
+    dx8-light-sidebar-navLinkColor: rgba(0, 0, 0, 0.88)
+properties:
+  userviewId: isr
+  name: ISRThemeName
+  description: ISRThemeDescription
+  id: theme_ISRTheme

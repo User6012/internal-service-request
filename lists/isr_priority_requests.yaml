@@ -1,0 +1,65 @@
+template:
+  className: ''
+  properties: {
+    }
+rowActions: [
+  ]
+columns:
+- filterable: true
+  hidden: 'false'
+  name: priority
+  id: column_0
+  label: Priority
+  sortable: 'false'
+  datalist_type: column
+- filterable: true
+  hidden: 'false'
+  renderHtml: ''
+  format:
+    className: ''
+    properties: {
+      }
+  label: Counts
+  sortable: 'false'
+  datalist_type: column
+  exclude_export: ''
+  name: AFD_COUNT_id
+  width: ''
+  headerAlignment: ''
+  action:
+    className: ''
+    properties: {
+      }
+  style: ''
+  id: column_1
+  alignment: ''
+pageSize: '0'
+orderBy: ''
+description: ''
+filters: [
+  ]
+pageSizeSelectorOptions: 10,20,30,40,50,100
+name: ISR Priority Requests
+id: isr_priority_requests
+binder:
+  className: org.joget.plugin.enterprise.AdvancedFormRowDataListBinder
+  properties:
+    joins: [
+      ]
+    having: [
+      ]
+    aggregateField:
+    - field: id
+      function: AFD_COUNT_
+    formDefId: isr_new_request
+    customSelectionValue: ''
+    extraCondition: ''
+    filters: [
+      ]
+    groupBy: priority
+    cacheRowCount: ''
+    functionColumns: [
+      ]
+actions: [
+  ]
+order: ''

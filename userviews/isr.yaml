@@ -1,0 +1,1310 @@
+className: org.joget.apps.userview.model.Userview
+categories:
+- className: org.joget.apps.userview.model.UserviewCategory
+  menus:
+  - className: org.joget.apps.userview.lib.HtmlPage
+    properties:
+      userviewCacheDuration: '10'
+      userviewCacheScope: application
+      textContent: <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+        non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
+        ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa,
+        varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
+        molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis
+        semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
+        Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum
+        bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim.
+        Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis
+        in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris
+        ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam
+        sodales hendrerit.</p>
+      enableOffline: ''
+      id: 5ECB552FB8AA48F2AE35980233EFE6D7
+      label: <i class="fa fa-home" aria-hidden="true"></i> Welcome
+      customId: home
+      content: |-
+        <h1></h1>
+        <table width="90%" border="0" collapse="" align="center">
+        <tbody>
+        <tr>
+        <td>
+        <h1><span style="font-size: 24pt; color: rgb(51, 51, 51);">Welcome to the Internal Service Request App</span></h1>
+        <p><span style="font-size: 14pt; color: #000000;">Manage, Approve and Track Interdepartmental Requests</span></p>
+        </td>
+        </tr>
+        <tr>
+        <td><img width="40%" src="#appResource.isrWelcomePage.png#"></td>
+        </tr>
+        <tr>
+        <td>
+        <p><br>This is an Internal Service Request (ISR) app that allows users to make and manage inter-departmental service requests.</p>
+        <p>Users will be able to make requests to specific head of department (HOD), who can then either resolve the request or assign the task to a subordinate for further action. This app also provides overall ISR reporting.&nbsp;</p>
+        <p>The Internal Service Request app has been built to make use of the new features and capababilities of Joget DX Enterprise.</p>
+        <p><strong>Tips to Joget administrator: </strong></p>
+        <ul>
+        <li>Input your Joget SMTP server configurations in <a href="#request.contextPath?html#/web/console/setting/general" target="_blank" rel="noopener">Web Console &gt; General Settings</a>&nbsp;to send email messages.</li>
+        <li>Input an email address for admin user in <a href="#request.contextPath?html#/web/console/directory/users" target="_blank" rel="noopener">Web Console &gt; Setup Users</a>&nbsp;for email notification to work.</li>
+        </ul>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+  properties:
+    hide: ''
+    permission:
+      className: org.joget.plugin.enterprise.AnonymousUserviewPermission
+      properties: {
+        }
+    id: category-9D565CC4CF9346E99BECBC413AE06018
+    label: ' '
+- className: org.joget.apps.userview.model.UserviewCategory
+  menus:
+  - className: org.joget.plugin.enterprise.DashboardMenu
+    properties:
+      customHeader: ''
+      defaultPortletHeight: '250'
+      customFooter: ''
+      enableOffline: ''
+      label: Dashboard
+      customId: d
+      style-tablet-display: none
+      style-display: none
+      mode: url
+      userviewCacheDuration: '20'
+      userviewCacheScope: ''
+      urlPortletSetting: [
+        ]
+      id: CFFB00C601B24605DC9609FB44E3508B
+  properties:
+    hide: ''
+    enableMegaMenu: ''
+    comment: ''
+    permission:
+      className: org.joget.apps.userview.lib.LoggedInUserPermission
+      properties: {
+        }
+    id: category-14D4BB340C3B4628545B88CA11F2B10C
+    label: Dashboard
+- className: org.joget.apps.userview.model.UserviewCategory
+  menus:
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: ''
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      selectionType: multiple
+      addFormId: ''
+      id: 84B9D74F9B3A4905B8D574D31BD4A3C1
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_personal_submitted
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.My Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: my_requests
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: 'no'
+      add-customFooter: ''
+      edit-allowRecordTraveling: ''
+      rowCount: 'true'
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: My Requests
+      list-newLinkTarget: ''
+      edit-lastButtonLabel: ''
+      buttonPosition: topLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions:
+      - hrefColumn: ''
+        hrefParam: ''
+        hrefTarget: _self
+        confirmation: ''
+        href: new_request
+        label: Create A New Request
+      edit-backButtonLabel: ''
+      list-editLinkTarget: ''
+  - className: org.joget.plugin.enterprise.DataListInboxMenu
+    properties:
+      appFilter: process
+      list-customFooter: ''
+      cacheAllLinks: ''
+      assignment-customHeader: ''
+      keyName: ''
+      assignment-customFooter: ''
+      enableOffline: ''
+      label: My Requests Inbox
+      customId: attending_submitted
+      datalistId: isr_personal_submitted
+      showDetail: ''
+      userviewCacheDuration: '20'
+      cacheListAction: ''
+      processId: isr
+      userviewCacheScope: ''
+      showPopup: ''
+      id: 67064636246B4C4E9A7C55AD50E220DB
+      rowCount: 'true'
+      list-customHeader: <h2>#i18n.My Requests Inbox#</h2>
+  - className: org.joget.apps.userview.lib.RunProcess
+    properties:
+      runProcessDirectly: 'Yes'
+      fieldPassoverMethod: append
+      keyName: ''
+      label: Create A New Request
+      paramName: ''
+      customId: new_request
+      messageShowAfterComplete: ''
+      userviewCacheDuration: '20'
+      showInPopupDialog: ''
+      userviewCacheScope: ''
+      runProcessSubmitLabel: ''
+      id: 5F799C6D16334195A3AC214EDACF62E0
+      fieldPassover: ''
+      processDefId: isr
+      redirectUrlAfterComplete: my_requests
+  properties:
+    hide: ''
+    permission:
+      className: org.joget.apps.userview.lib.LoggedInUserPermission
+      properties: {
+        }
+    id: category-4E37D35FDDE84BC1A395BD48D9778BF9
+    label: <i class="fa fa-list-alt" aria-hidden="true"></i> Requester
+- className: org.joget.apps.userview.model.UserviewCategory
+  menus:
+  - className: org.joget.plugin.enterprise.DataListInboxMenu
+    properties:
+      appFilter: process
+      list-customFooter: ''
+      cacheAllLinks: ''
+      assignment-customHeader: ''
+      keyName: ''
+      assignment-customFooter: ''
+      enableOffline: ''
+      label: Requests Inbox
+      customId: attending_assigned
+      datalistId: isr_all_requests
+      showDetail: ''
+      userviewCacheDuration: '20'
+      cacheListAction: ''
+      processId: isr
+      userviewCacheScope: ''
+      showPopup: ''
+      id: E971DED31925470E81D2ABFD99352B4E
+      rowCount: 'true'
+      list-customHeader: <h2>#i18n.Requests Inbox#</h2>
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: 'yes'
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      list-deleteSubformData: 'true'
+      selectionType: multiple
+      addFormId: ''
+      id: B97DA6DCF3B9498CB907979208E68181
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      list-deleteFiles: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_all_requests
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.All Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      list-abortRelatedRunningProcesses: 'true'
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: all_requests
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: left
+      add-customFooter: ''
+      list-deleteGridData: 'true'
+      edit-allowRecordTraveling: ''
+      rowCount: ''
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: All Requests
+      edit-lastButtonLabel: ''
+      buttonPosition: topLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions: [
+        ]
+      edit-backButtonLabel: ''
+  properties:
+    hide: ''
+    permission:
+      className: org.joget.apps.userview.lib.LoggedInUserPermission
+      properties: {
+        }
+    id: category-6BF19873D7EE48E2BA6619715046263D
+    label: <i class="fa fa-list-alt" aria-hidden="true"></i> Attending
+- className: org.joget.apps.userview.model.UserviewCategory
+  menus:
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: ''
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      selectionType: multiple
+      addFormId: ''
+      id: 53F2131358664011B5D22824283E8151
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_all_requests
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.All Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: all
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: 'no'
+      add-customFooter: ''
+      edit-allowRecordTraveling: ''
+      rowCount: 'true'
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: All Requests
+      edit-lastButtonLabel: ''
+      buttonPosition: bottomLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions: [
+        ]
+      edit-backButtonLabel: ''
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: ''
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      selectionType: multiple
+      addFormId: ''
+      id: 083A7F13D6C1454797C39EA56C0D38A4
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_new_requests
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.All New Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: all_new_requests
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: 'no'
+      add-customFooter: ''
+      edit-allowRecordTraveling: ''
+      rowCount: 'true'
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: All New Requests
+      edit-lastButtonLabel: ''
+      buttonPosition: bottomLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions: [
+        ]
+      edit-backButtonLabel: ''
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: ''
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      selectionType: multiple
+      addFormId: ''
+      id: FEA3CD02B43D4074B52BA31068E71F75
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_reopened_requests
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.All Reopened Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: all_reopened_requests
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: 'no'
+      add-customFooter: ''
+      edit-allowRecordTraveling: ''
+      rowCount: 'true'
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: All Reopened Requests
+      edit-lastButtonLabel: ''
+      buttonPosition: bottomLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions: [
+        ]
+      edit-backButtonLabel: ''
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: ''
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      selectionType: multiple
+      addFormId: ''
+      id: A57A8D5D50E541569DE4597D5B798419
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_resolved_requests
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.All Resolved Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: all_resolved_requests
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: 'no'
+      add-customFooter: ''
+      edit-allowRecordTraveling: ''
+      rowCount: 'true'
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: All Resolved Requests
+      edit-lastButtonLabel: ''
+      buttonPosition: bottomLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions: [
+        ]
+      edit-backButtonLabel: ''
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: ''
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      selectionType: multiple
+      addFormId: ''
+      id: 702D4E6BEA354A8FA018ACC9BFE3BD21
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_assigned_requests
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.All Assigned Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: all_assigned_requests
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: 'no'
+      add-customFooter: ''
+      edit-allowRecordTraveling: ''
+      rowCount: 'true'
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: All Assigned Requests
+      edit-lastButtonLabel: ''
+      buttonPosition: bottomLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions: [
+        ]
+      edit-backButtonLabel: ''
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: ''
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      selectionType: multiple
+      addFormId: ''
+      id: 128ED1CCAB7A473FBCCC4E80E9B6A302
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_rejected_requests
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.All Rejected Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: all_rejected_requests
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: 'no'
+      add-customFooter: ''
+      edit-allowRecordTraveling: ''
+      rowCount: 'true'
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: All Rejected Requests
+      edit-lastButtonLabel: ''
+      buttonPosition: bottomLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions: [
+        ]
+      edit-backButtonLabel: ''
+  - className: org.joget.plugin.enterprise.CrudMenu
+    properties:
+      add-afterSavedRedirectUrl: ''
+      list-customFooter: ''
+      cacheAllLinks: ''
+      editFormId: isr_request_detail
+      edit-saveButtonLabel: ''
+      list-showDeleteButton: ''
+      list-newButtonLabel: ''
+      add-afterSavedRedirectParamName: ''
+      enableOffline: ''
+      selectionType: multiple
+      addFormId: ''
+      id: 2F99D43FC91B449E9E55174B86514F70
+      add-messageShowAfterComplete: ''
+      edit-readonlyLabel: ''
+      list-editLinkLabel: '#i18n.View#'
+      add-cancelButtonLabel: ''
+      add-customHeader: ''
+      edit-readonly: ''
+      datalistId: isr_verified_requests
+      edit-nextButtonLabel: ''
+      userviewCacheDuration: '20'
+      add-afterSaved: list
+      add-afterSavedRedirectParamvalue: ''
+      list-customHeader: <h2>#i18n.All Verified Requests#</h2>
+      edit-customHeader: ''
+      edit-afterSavedRedirectParamName: ''
+      edit-afterSavedRedirectUrl: ''
+      edit-prevButtonLabel: ''
+      customId: all_verified_requests
+      edit-afterSaved: list
+      list-deleteButtonLabel: ''
+      checkboxPosition: 'no'
+      add-customFooter: ''
+      edit-allowRecordTraveling: ''
+      rowCount: 'true'
+      edit-afterSavedRedirectParamvalue: ''
+      edit-customFooter: ''
+      keyName: ''
+      label: All Verified Requests
+      edit-lastButtonLabel: ''
+      buttonPosition: bottomLeft
+      edit-firstButtonLabel: ''
+      add-saveButtonLabel: ''
+      edit-messageShowAfterComplete: ''
+      cacheListAction: ''
+      userviewCacheScope: ''
+      edit-moreActions: [
+        ]
+      list-moreActions: [
+        ]
+      edit-backButtonLabel: ''
+  properties:
+    hide: ''
+    permission:
+      className: org.joget.apps.userview.lib.LoggedInUserPermission
+      properties: {
+        }
+    id: category-B8F37ED7EE324362B477C93374366F1B
+    label: <i class="fa fa-list-alt" aria-hidden="true"></i> General Reports
+- className: org.joget.apps.userview.model.UserviewCategory
+  menus:
+  - className: org.joget.apps.userview.lib.HtmlPage
+    properties:
+      userviewCacheDuration: '10'
+      userviewCacheScope: application
+      enableOffline: ''
+      id: B635A679CCDD49FCB0123AC20BE41B69
+      label: About
+      customId: about
+      content: <p>#i18n.page_about_richText#</p>
+  - className: org.joget.apps.userview.lib.HtmlPage
+    properties:
+      userviewCacheDuration: '10'
+      userviewCacheScope: application
+      enableOffline: ''
+      id: FC019100D04E41A3B78724FE5AFA4659
+      label: Joget Resources
+      customId: jogetworkflowresources
+      content: |-
+        <ul>
+        <li><a href="https://www.joget.com/" target="_blank" rel="noopener">#i18n.Joget Home#</a></li>
+        <li><a href="https://www.joget.org/download/" target="_blank" rel="noopener">#i18n.Joget Downloads#</a></li>
+        <li><a href="http://www.jogetcloud.com/" target="_blank" rel="noopener">#i18n.Joget Cloud#</a></li>
+        <li><a href="https://academy.joget.com/" target="_blank" rel="noopener">#i18n.Joget Academy#</a></li>
+        <li><a href="https://www.youtube.com/user/jogetworkflow" target="_blank" rel="noopener">#i18n.Joget Videos#</a></li>
+        <li><a href="https://marketplace.joget.org" target="_blank" rel="noopener">#i18n.Joget Marketplace#</a></li>
+        <li><a href="https://community.joget.org" target="_blank" rel="noopener">#i18n.Joget Knowledge Base#</a></li>
+        <li><a href="http://answer.joget.org" target="_blank" rel="noopener">#i18n.Joget Answers#</a></li>
+        <li><a href="http://blog.joget.org/" target="_blank" rel="noopener">#i18n.Joget Blog#</a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=org.joget.mobile&amp;hl=en" target="_blank" rel="noopener">#i18n.Joget Mobile Android App#</a></li>
+        <li><a href="https://itunes.apple.com/us/app/joget-workflow-mobile/id1084995640?mt=8" target="_blank" rel="noopener">#i18n.Joget Mobile iOS App#</a></li>
+        <li><a href="https://github.com/jogetworkflow/" target="_blank" rel="noopener">#i18n.Joget Open Source Repository#</a></li>
+        <li><a href="https://translate.joget.org" target="_blank" rel="noopener">#i18n.Joget Translations#</a></li>
+        <li><a href="http://joget.org/buy-enterprise-edition-license/" target="_blank" rel="noopener">#i18n.Purchase Joget License#</a></li>
+        </ul>
+  properties:
+    hide: ''
+    comment: ''
+    permission:
+      className: ''
+      properties: {
+        }
+    id: category-6B7720E4525B48FDA8B885A91B153B36
+    label: <i class="fa fa-info-circle" aria-hidden="true"></i> Info
+- className: org.joget.apps.userview.model.UserviewCategory
+  menus:
+  - className: org.joget.apps.userview.lib.DataListMenu
+    properties:
+      cacheAllLinks: ''
+      customHeader: ''
+      keyName: ''
+      customFooter: "<script>\r\n$(function(){\r\n    $('.exportlinks').hide();\r\n\
+        });\r\n</script>"
+      enableOffline: ''
+      label: My Requests
+      customId: d_my_requests
+      buttonPosition: topLeft
+      datalistId: d_my_requests
+      checkboxPosition: 'no'
+      selectionType: multiple
+      userviewCacheDuration: '20'
+      cacheListAction: ''
+      userviewCacheScope: ''
+      id: 73FF7EE73D43469837022288D73A2405
+      rowCount: ''
+  - className: org.joget.plugin.enterprise.DataListInboxMenu
+    properties:
+      appFilter: process
+      list-customFooter: "<script>\r\n$(function(){\r\n    $('.exportlinks').hide();\r\
+        \n});\r\n</script>"
+      cacheAllLinks: ''
+      assignment-customHeader: ''
+      keyName: ''
+      assignment-customFooter: ''
+      enableOffline: ''
+      label: My Requests Inbox
+      customId: d_my_inbox
+      datalistId: d_add_requests
+      showDetail: ''
+      userviewCacheDuration: '20'
+      cacheListAction: ''
+      processId: isr
+      userviewCacheScope: ''
+      showPopup: ''
+      id: D12FCF02C28C47E52DEAF61CF9B0BC74
+      rowCount: ''
+      list-customHeader: ''
+  - className: org.joget.plugin.enterprise.DataListInboxMenu
+    properties:
+      appFilter: process
+      list-customFooter: "<script>\r\n$(function(){\r\n    $('.exportlinks').hide();\r\
+        \n});\r\nvar _customFooTableArgs = {breakpoints: {phone: 0, tablet: 0}};\r\
+        \n</script>"
+      cacheAllLinks: ''
+      assignment-customHeader: ''
+      keyName: ''
+      assignment-customFooter: ''
+      enableOffline: ''
+      label: Attending Inbox
+      customId: d_attending_assigned
+      datalistId: d_add_requests
+      showDetail: ''
+      userviewCacheDuration: '20'
+      cacheListAction: ''
+      processId: isr
+      userviewCacheScope: ''
+      showPopup: ''
+      id: 25805340FC774EEB2F1AB8E0BBF13093
+      rowCount: ''
+      list-customHeader: ''
+  - className: org.joget.apps.userview.lib.FormMenu
+    properties:
+      loadDataWithKey: ''
+      redirectUrlOnCancel: ''
+      actionOnCancel: ''
+      redirectTargetOnCancel: top
+      customFooter: ''
+      enableOffline: ''
+      paramName: ''
+      afterSavedReloadTarget: 'true'
+      customId: view_my_request
+      showInPopupDialog: ''
+      cancelButtonLabel: ''
+      readonly: ''
+      actionAfterSaved: ''
+      id: 2D0167FF610549E47478D18B2C69A8AA
+      fieldPassover: ''
+      redirectUrlAfterComplete: ''
+      formId: isr_request_detail
+      customHeader: ''
+      fieldPassoverMethod: append
+      keyName: ''
+      redirectTargetOnComplete: ''
+      label: 'View Request '
+      messageShowAfterComplete: ''
+      userviewCacheDuration: '20'
+      submitButtonLabel: ''
+      userviewCacheScope: ''
+      readonlyLabel: ''
+  - className: org.joget.apps.userview.lib.DataListMenu
+    properties:
+      cacheAllLinks: ''
+      customHeader: ''
+      keyName: ''
+      customFooter: ''
+      enableOffline: ''
+      label: List (test)
+      customId: ''
+      buttonPosition: bottomLeft
+      datalistId: d_my_requests
+      checkboxPosition: left
+      selectionType: multiple
+      userviewCacheDuration: '20'
+      cacheListAction: ''
+      userviewCacheScope: ''
+      id: A14780BB7A264C2B70C80A867D13D480
+      rowCount: ''
+  properties:
+    hide: 'yes'
+    comment: ''
+    permission:
+      className: ''
+      properties: {
+        }
+    id: category-2594A33049714EEAC0344B8D1205CF42
+    label: Hidden
+properties:
+  logoutText: Logout
+  welcomeMessage: '#date.EEE, d MMM yyyy#'
+  name: '#i18n.applicationName#'
+  description: ''
+  footerMessage: <a href="http://joget.org/" target="_blank">Powered by Joget</a>
+  id: isr
+setting:
+  properties:
+    __: ''
+    userviewDescription: ''
+    userviewId: isr
+    hideThisUserviewInAppCenter: ''
+    userview_thumbnail: '#appResource.isr_appIcon.png#'
+    userview_category: ''
+    permission:
+      className: ''
+      properties: {
+        }
+    theme:
+      className: org.joget.plugin.enterprise.BuilderTheme.theme_ISRTheme
+      properties:
+        css: ''
+        global-itemPaddingBlock: 5px
+        dx8-light-sidebar-navActiveIconColor: '#1677FF'
+        global-contentPaddingInline: 40px
+        global-controlHeight: 40px
+        dx8borderColor: '#4977c1'
+        dx8-dark-header-headerFontColor: '#FFFFFF'
+        dx8-dark-header-navActiveLinkColor: '#FFFFFF'
+        global-itemMarginInline: 8px
+        dx8-light-sidebar-navActiveLinkColor: '#1677FF'
+        dx8-light-header-navActiveLinkBackground: '#F9F9F9'
+        disableHelpGuide: ''
+        dx8-dark-sidebar-navLinkIcon: '#ffffff'
+        dx8-dark-header-navBadge: '#ff4d4f'
+        horizontal_menu: dark-sidebar
+        global-sidebarWidth: 295px
+        profile: ''
+        dx8-dark-sidebar-headerFontColor: '#ffffff'
+        homeAttractBanner: ''
+        global-headerPadding: 20px
+        homeUrl: ''
+        dx8footerColor: '#122064'
+        subheader: ''
+        dx8contentbackground: '#ffffff'
+        org.joget.theme.lib.RadioComponent:
+          prefix: jgt-radio-
+          className: org.joget.theme.lib.RadioComponent
+          properties:
+            colorPrimary: '#2056be'
+            padding: 12px
+            colorText: '#4977c1'
+            colorPrimaryHover: '#5897de'
+            colorBgContainer: '#e1ecfc'
+            colorBgContainerDisabled: '#bfd9f7'
+            colorBorder: '#4977c1'
+            colorWhite: '#ffffff'
+            lineWidth: 1.3px
+            colorPrimaryBorder: '#b3cee2'
+            colorTextDisabled: '#b3cee2'
+            radioSize: 18px
+            lineType: solid
+            fontSize: 15px
+            lineHeight: '1.6'
+        org.joget.theme.lib.UploadComponent:
+          prefix: jgt-upload-
+          className: org.joget.theme.lib.UploadComponent
+          properties:
+            colorPrimary: '#2056be'
+            colorText: '#2056be'
+            borderRadiusLG: 12px
+            colorError: '#b71c1c'
+            colorTextDescription: '#4977c1'
+            colorBorder: '#b3cee2'
+            controlHeightLG: 42px
+            lineWidth: 1.2px
+            controlItemBgHover: '#bfd9f7'
+            lineType: dashed
+            colorFillAlter: '#e7eaf6'
+            fontSize: 15px
+            lineHeight: '1.6'
+        dx8-dark-sidebar-navBadge: '#ffdf4b'
+        dx8-dark-header-navActiveIconColor: '#FFFFFF'
+        dx8background: '#e7eaf6'
+        org.joget.theme.lib.PaginationComponent:
+          prefix: jgt-pg-
+          className: org.joget.theme.lib.PaginationComponent
+          properties:
+            colorPrimary: '#2056be'
+            padding: 7px
+            colorText: '#2056be'
+            margin: 8px
+            colorPrimaryHover: '#5897de'
+            colorBgContainer: '#ffffff'
+            fontWeightStrong: '700'
+            itemActiveColorDisabled: '#b3cee2'
+            lineWidth: 1.3px
+            borderRadius: 8px
+            itemActiveBgDisabled: '#e1ecfc'
+            lineType: solid
+            colorBgTextHover: '#e7eaf6'
+            fontSize: 15px
+            itemSize: 34px
+            controlHeight: 34px
+            itemActiveBg: '#e1ecfc'
+        dx8-light-sidebar-navBadge: '#ff4d4f'
+        org.joget.theme.lib.ListComponent:
+          prefix: jgt-list-
+          className: org.joget.theme.lib.ListComponent
+          properties:
+            avatarMarginRight: 17px
+            contentBg: '#e7eaf6'
+            colorText: '#1e3a6b'
+            itemPadding: 14px 22px
+            borderRadius: 10px
+            lineType: solid
+            descriptionFontSize: 15px
+            colorTextDescription: '#4977c1'
+            fontSize: 15px
+            lineHeight: '1.6'
+            colorBorder: '#b3cee2'
+            lineWidth: 1.3px
+        dx8-dark-header-navBackground: '#001529'
+        js: ''
+        global-itemPaddingInline: 50px
+        urlsToCache: ''
+        userImage: ''
+        dx8-dark-header-navLinkBackground: '#001529'
+        fontControl: ''
+        global-iconSize: 16px
+        global-lineHeight: '1.6'
+        dx8-light-sidebar-headerColor: '#f5f5f5'
+        org.joget.theme.lib.TableComponent:
+          prefix: jgt-table-
+          className: org.joget.theme.lib.TableComponent
+          properties:
+            borderColor: '#b3cee2'
+            rowHoverBg: '#e7eaf6'
+            colorText: '#2056be'
+            cellPaddingInline: 18px
+            colorBgContainer: '#ffffff'
+            fontWeightStrong: '700'
+            headerSplitColor: '#b3cee2'
+            headerSortHoverBg: '#bfd9f7'
+            headerSortActiveBg: '#bfd9f7'
+            rowSelectedBg: '#e1ecfc'
+            lineWidth: 1.3px
+            headerColor: '#2056be'
+            headerBg: '#bfd9f7'
+            borderRadius: 10px
+            cellPaddingBlock: 18px
+            lineType: solid
+            headerBorderRadius: 12px
+            lineHeight: '1.6'
+            cellFontSize: 15px
+        global-boxShadowSecondary: 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 3px 6px -4px
+          rgba(0, 0, 0, 0.12), 0 9px 28px 8px rgba(0, 0, 0, 0.05)
+        dx8-light-header-headerColor: '#FFFFFF'
+        org.joget.theme.lib.CardComponent:
+          prefix: jgt-card-
+          className: org.joget.theme.lib.CardComponent
+          properties:
+            padding: 24px
+            colorText: '#2056be'
+            borderRadiusLG: 12px
+            colorBgContainer: '#ffffff'
+            fontWeightStrong: '700'
+            colorTextSubtitle: '#5897de'
+            colorTextDescription: '#4977c1'
+            boxShadowCard: '0 4px 16px 0 #bfd9f788'
+            fontSizeLG: 16px
+            lineWidth: 1.5px
+            headerBg: '#bfd9f7'
+            headerFontSize: 18px
+            colorTextTitle: '#2056be'
+            fontHeight: '22'
+            lineType: solid
+            colorBorderSecondary: '#b3cee2'
+            lineHeight: '1.6'
+            colorTextHeading: '#2056be'
+            headerHeight: 56px
+        dx8footerBackground: '#b3cee2'
+        global-borderRadius: 8px
+        dx8-light-header-headerFontColor: '#252F4A'
+        dx8-dark-sidebar-navActiveIconColor: '#2056be'
+        dx8-dark-sidebar-headerColor: '#2056be'
+        dx8-light-sidebar-navBackground: '#FFFFFF'
+        org.joget.theme.lib.CheckboxComponent:
+          prefix: jgt-cb-
+          className: org.joget.theme.lib.CheckboxComponent
+          properties:
+            colorPrimary: '#2056be'
+            padding: 8px
+            colorText: '#1e3a6b'
+            colorPrimaryHover: '#5897de'
+            borderRadiusSM: 6px
+            colorBgContainer: '#e1ecfc'
+            controlInteractiveSize: 18px
+            colorBgContainerDisabled: '#bfd9f7'
+            colorBorder: '#4977c1'
+            colorWhite: '#ffffff'
+            lineWidth: 1.3px
+            colorPrimaryBorder: '#b3cee2'
+            colorTextDisabled: '#b3cee2'
+            lineType: solid
+            fontSize: 15px
+            lineHeight: '1.6'
+        dx8-dark-header-navScrollbarThumb: '#F1F1F4'
+        inbox: current
+        global-footerPadding: 16px 50px
+        dx8-light-sidebar-navScrollbarThumb: '#F1F1F4'
+        hideSidebarUserMenu: ''
+        primaryColor: '#2056be'
+        global-itemMarginBlock: 4px
+        disablePush: 'true'
+        removeAssignmentTitle: ''
+        dx8-dark-sidebar-navBackground: '#4977c1'
+        org.joget.theme.lib.DropdownComponent:
+          prefix: jgt-dd-
+          className: org.joget.theme.lib.DropdownComponent
+          properties:
+            controlItemBgHover: '#b3cee2'
+            paddingBlock: 7px
+            padding: 7px
+            colorText: '#2056be'
+            boxShadowSecondary: '0 4px 24px #b3cee244'
+            borderRadius: 10px
+            controlPaddingHorizontal: 18px
+            fontSize: 15px
+            lineHeight: '1.6'
+            colorBgElevated: '#e1ecfc'
+        global-footerHeight: 54px
+        dx8-light-sidebar-navLinkBackground: '#FFFFFF'
+        dx8-dark-sidebar-navActiveLinkColor: '#2056be'
+        shortcutLinkLabel: Shortcut
+        logo: ''
+        enableResponsiveSwitch: 'true'
+        dx8-dark-subMenuColor: '#e1ecfc'
+        fav_icon: ''
+        org.joget.theme.lib.WizardComponent:
+          prefix: jgt-wizard-
+          className: org.joget.theme.lib.WizardComponent
+          properties:
+            colorPrimary: '#2056be'
+            titleLineHeight: 32px
+            colorText: '#1e3a6b'
+            colorSplit: '#b3cee2'
+            borderRadius: 50%
+            lineType: dashed
+            colorTextDescription: '#4977c1'
+            fontSize: 15px
+            lineHeight: '1.6'
+            colorTextLightSolid: '#ffffff'
+            controlHeight: 33px
+            lineWidth: 1.3px
+        global-padding: 20px
+        disablePwa: 'true'
+        dx8-light-subMenuColor: '#001529'
+        dx8backgroundImage: '#appResource.isrWelcomePage.png#'
+        dx8-dark-header-navLinkIcon: rgba(255, 255, 255, 0.65)
+        dx8-light-sidebar-navActiveLinkBackground: '#E6F4FF'
+        global-headerHeight: 64px
+        dx8-dark-sidebar-navLinkColor: '#ffffff'
+        org.joget.theme.lib.BreadcrumbComponent:
+          prefix: jgt-breadcrumb-
+          className: org.joget.theme.lib.BreadcrumbComponent
+          properties:
+            separatorColor: '#2056be'
+            padding: 7px
+            colorText: '#1e3a6b'
+            separatorMargin: 7px
+            linkColor: '#2056be'
+            bgColor: '#bfd9f7'
+            borderRadius: 6px
+            fontHeight: 22px
+            colorBgTextHover: '#e7eaf6'
+            linkHoverColor: '#2056be'
+            fontSize: 15px
+            lineHeight: '1.6'
+            paddingBlockStart: 18px
+            iconFontSize: 16px
+            fontWeight: '500'
+        global-contentWidth: 1580px
+        global-fontSize: 15px
+        org.joget.theme.lib.TabComponent:
+          prefix: jgt-tab-
+          className: org.joget.theme.lib.TabComponent
+          properties:
+            itemColor: '#2056be'
+            colorBgContainer: '#e1ecfc'
+            colorBorder: '#b3cee2'
+            cardBg: '#bfd9f7'
+            cardHeight: 42px
+            cardGutter: 3px
+            borderRadius: 10px
+            titleFontSize: 15px
+            lineType: solid
+            itemHoverColor: '#4977c1'
+            lineHeight: '1.6'
+            horizontalMargin: 0 0 16px 0
+            cardPadding: 10px 21px
+            itemSelectedColor: '#2056be'
+            fontWeight: '600'
+        dx8-light-header-navLinkBackground: '#FFFFFF'
+        dx8-light-sidebar-navBadgeText: '#ffffff'
+        dx8-dark-header-navBadgeText: '#ffffff'
+        dx8-light-header-navScrollbarThumb: '#F1F1F4'
+        userMenu: [
+          ]
+        org.joget.theme.lib.InputComponent:
+          prefix: jgt-input-
+          className: org.joget.theme.lib.InputComponent
+          properties:
+            activeBg: '#e1ecfc'
+            hoverBg: '#bfd9f7'
+            colorText: '#1e3a6b'
+            inputFontSize: 15px
+            paddingInline: 15px
+            activeShadow: '0 0 0 2px #4977c144'
+            colorBgContainer: '#ffffff'
+            colorBgContainerDisabled: '#e1ecfc'
+            colorTextDescription: '#2056be'
+            colorBorder: '#4977c1'
+            lineWidth: 1.3px
+            colorIconHover: '#4977c1'
+            paddingBlock: 7px
+            colorIcon: '#4977c1'
+            colorTextDisabled: '#b3cee2'
+            borderRadius: 8px
+            activeBorderColor: '#2056be'
+            lineType: solid
+            hoverBorderColor: '#2056be'
+            colorTextPlaceholder: '#b3cee2'
+            fontSizeIcon: 13px
+            lineHeight: '1.6'
+            controlHeight: 38px
+        dx8-light-header-navLinkIcon: '#4B5675'
+        dx8-light-sidebar-headerFontColor: rgba(0, 0, 0, 0.88)
+        org.joget.theme.lib.TypographyComponent:
+          prefix: jgt-tpgh-
+          className: org.joget.theme.lib.TypographyComponent
+          properties:
+            colorLinkHover: '#4977c1'
+            colorText: '#1e3a6b'
+            googleFontAPIKey: ''
+            lineHeightHeading2: '1.24'
+            fontWeightStrong: '700'
+            lineHeightHeading1: '1.18'
+            colorTextDescription: '#4977c1'
+            fontSizeHeading1: 42px
+            lineHeightHeading5: '1.55'
+            lineHeightHeading4: '1.44'
+            lineHeightHeading3: '1.35'
+            googleFont: ''
+            titleMarginTop: 0px
+            colorLink: '#2056be'
+            colorTextDisabled: '#b3cee2'
+            fontSizeHeading3: 27px
+            fontSizeHeading2: 32px
+            fontSizeHeading5: 18px
+            fontSizeHeading4: 21px
+            fontSize: 15px
+            lineHeight: '1.6'
+            colorLinkActive: '#5897de'
+            colorTextHeading: '#2056be'
+            titleMarginBottom: 0.6em
+        dx8-light-header-navLinkColor: '#4B5675'
+        shortcut: [
+          ]
+        global-contentPaddingInlineSM: 20px
+        org.joget.theme.lib.AccordionComponent:
+          prefix: jgt-acc-
+          className: org.joget.theme.lib.AccordionComponent
+          properties:
+            contentBg: '#f8bbd0'
+            colorText: '#c2185b'
+            headerPadding: 13px 18px
+            headerBg: '#f06292'
+            borderRadius: 12px
+            contentPadding: 7px 18px
+            lineType: solid
+            fontSize: 16px
+            lineHeight: '1.6'
+            colorTextHeading: '#c2185b'
+            colorBorder: '#f06292'
+            lineWidth: 1.5px
+        global-itemHeight: 40px
+        global-iconMarginInline: 10px
+        org.joget.theme.lib.ButtonComponent:
+          prefix: jgt-btn-
+          className: org.joget.theme.lib.ButtonComponent
+          properties:
+            colorLinkHover: '#5897de'
+            colorPrimaryHover: '#5897de'
+            primaryColor: '#2056be'
+            contentFontSize: 16px
+            colorBgContainerDisabled: '#bfd9f7'
+            colorError: '#b71c1c'
+            paddingBlock: 10px
+            defaultBg: '#e1ecfc'
+            primaryShadow: '0 2px 0 #bfd9f788'
+            defaultColor: '#2056be'
+            defaultShadow: '0 2px 0 #bfd9f722'
+            defaultHoverColor: '#358cff'
+            colorErrorActive: '#358cff'
+            colorTextLightSolid: '#ffffff'
+            fontWeight: '600'
+            colorPrimary: '#358cff'
+            defaultActiveColor: '#2056be'
+            contentLineHeight: '1.5'
+            paddingInline: 22px
+            defaultHoverBorderColor: '#5897de'
+            defaultActiveBg: '#bfd9f7'
+            dangerShadow: '0 2px 0 #2056be11'
+            dangerColor: '#fff'
+            colorErrorHover: '#2056be'
+            defaultBorderColor: '#b3cee2'
+            colorLink: '#5897de'
+            defaultHoverBg: '#e7eaf6'
+            colorTextDisabled: '#b3cee2'
+            borderRadius: 8px
+            defaultActiveBorderColor: '#2056be'
+            colorPrimaryActive: '#1e3a6b'
+            colorLinkActive: '#5897de'
+            controlHeight: 40px
+            borderColorDisabled: '#b3cee2'
+            linkHoverBg: '#e1ecfc'
+        org.joget.theme.lib.FormComponent:
+          prefix: jgt-form-
+          className: org.joget.theme.lib.FormComponent
+          properties:
+            fieldWidth: 70%
+            labelFloat: left
+            borderRadiusLG: 12px
+            colorTextDescription: '#4977c1'
+            labelWidth: 30%
+            lineWidth: 1.5px
+            headerFontWeight: '700'
+            labelRequiredMarkColor: '#2056be'
+            headerFontSize: 17px
+            controlOutline: '#b3cee244'
+            lineType: solid
+            controlOutlineWidth: 2px
+            fontWeight: '700'
+            colorText: '#2056be'
+            labelMarginInlineEnd: 15px
+            labelFontSize: 15px
+            colorBgContainer: '#e1ecfc'
+            headerFontHeight: '22'
+            colorBorder: '#b3cee2'
+            labelHeight: auto
+            labelAlignTop: start
+            headerBg: '#bfd9f7'
+            itemMarginBottom: 24px
+            labelAlign: end
+            sectionPaddingBottom: 20px
+            marginBottom: 10px
+            lineHeight: '1.6'
+            colorTextHeading: '#2056be'
+            headerHeight: 56px
+            headerPaddingInline: 24px
+            fieldFloat: left
+        dx8-dark-header-headerColor: '#001529'
+        global-borderRadiusLG: 12px
+        dx8-light-subMenuBgColor: '#fafafa'
+        dx8-dark-sidebar-navLinkBackground: '#4977c1'
+        dx8-dark-sidebar-navBadgeText: '#1e3a6b'
+        dx8-dark-sidebar-navScrollbarThumb: '#b3cee2'
+        dx8-dark-header-navLinkColor: rgba(255, 255, 255, 0.65)
+        dx8-light-sidebar-navLinkIcon: rgba(0, 0, 0, 0.88)
+        dx8-light-header-navBadgeText: '#ffffff'
+        subfooter: ''
+        dx8-light-header-navBackground: '#FFFFFF'
+        dx8-light-header-navBadge: '#ff4d4f'
+        dx8-dark-subMenuBgColor: '#2056be'
+        dx8-dark-sidebar-navActiveLinkBackground: '#e1ecfc'
+        dx8-light-sidebar-navLinkColor: rgba(0, 0, 0, 0.88)
+    userviewName: Internal Service Request

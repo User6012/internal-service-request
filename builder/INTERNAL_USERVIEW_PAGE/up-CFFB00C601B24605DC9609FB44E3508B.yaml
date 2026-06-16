@@ -1,0 +1,520 @@
+elements:
+- elements:
+  - elements:
+    - elements:
+      - className: org.joget.plugin.enterprise.InformationTileComponent
+        properties:
+          template: "<!--{sampleWidth: '250px', tags: 'light-bg icon'}-->\r\n<div\
+            \ class=\"card shadow-sm flex-row row align-items-center align-items-stretch\
+            \ ms-0 me-0\" \r\n     style=\"height:{{height||150}};\r\n           \
+            \ background-color:{{bgColor||}}; \r\n            background-image:url('{{bgImg||}}');\"\
+            >\r\n    <div style=\"position: absolute;\r\n                top: 5px;\r\
+            \n                right: 5px;\r\n                z-index: 1;\r\n     \
+            \           width: unset;\r\n                padding: 0;\">\r\n      \
+            \  {{reload||<a class=\"reload\" style=\"color:inherit; opacity: 0.6;\
+            \ margin-left:5px;\" href=\"\"><i class=\"fas fa-redo\"></i></a>}}\r\n\
+            \    </div>\r\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center\
+            \ \r\n                justify-content-center rounded-start\" \r\n    \
+            \     style=\"color:{{color||#2FB976}}; \r\n         font-size: 48px;\"\
+            >\r\n        {{icon||<i class=\"far fa-list-alt\"></i>}}\r\n    </div>\r\
+            \n    <div class=\"stats-info py-3 col-8 text-end\">\r\n        <p style=\"\
+            font-size: 24px; \r\n                  font-weight: 600; \r\n        \
+            \          margin-bottom: 10px;\">\r\n            {{value||#datalist.size.isr_all_requests#}}</p>\r\
+            \n        <h4 style=\"font-size: 12px;\r\n                   color: rgba(0,0,0,.6);\r\
+            \n                   margin: 5px 0;\">\r\n            {{title||All Requests}}\r\
+            \n        </h4>\r\n    </div>\r\n</div>\r\n<!---->"
+          attr-data-events-listening: [
+            ]
+          color: '#2FB976'
+          icon: <i class="far fa-list-alt"></i>
+          link: all
+          description: ''
+          bgImg: ''
+          style-border-color: '#F0F0F0'
+          title: All Requests
+          customId: ''
+          reload: ''
+          bgColor: ''
+          id: D36371B2D5AA4AA914A275F9737A0E17
+          style-tablet-margin-bottom: 16px
+          value: '#datalist.size.isr_all_requests#'
+          height: 150px
+          style-border-radius: 15px
+      className: org.joget.apps.userview.lib.component.ColumnComponent
+      properties:
+        style-padding-right: 15px
+        style-tablet-flex: 0 0 50%
+        style-tablet-max-width: 50%
+        style-padding-left: 15px
+    - elements:
+      - className: org.joget.plugin.enterprise.InformationTileComponent
+        properties:
+          template: "<!--{sampleWidth: '250px', tags: 'light-bg icon'}-->\r\n<div\
+            \ class=\"card shadow-sm flex-row row align-items-center align-items-stretch\
+            \ ms-0 me-0\" \r\n     style=\"height:{{height||150}};\r\n           \
+            \ background-color:{{bgColor||}}; \r\n            background-image:url('{{bgImg||}}');\"\
+            >\r\n    <div style=\"position: absolute;\r\n                top: 5px;\r\
+            \n                right: 5px;\r\n                z-index: 1;\r\n     \
+            \           width: unset;\r\n                padding: 0;\">\r\n      \
+            \  {{reload||<a class=\"reload\" style=\"color:inherit; opacity: 0.6;\
+            \ margin-left:5px;\" href=\"\"><i class=\"fas fa-redo\"></i></a>}}\r\n\
+            \    </div>\r\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center\
+            \ \r\n                justify-content-center rounded-start\" \r\n    \
+            \     style=\"color:{{color||#2FB976}}; \r\n         font-size: 48px;\"\
+            >\r\n        {{icon||<i class=\"zmdi zmdi-plus-circle-o\"></i>}}\r\n \
+            \   </div>\r\n    <div class=\"stats-info py-3 col-8 text-end\">\r\n \
+            \       <p style=\"font-size: 24px; \r\n                  font-weight:\
+            \ 600; \r\n                  margin-bottom: 10px;\">\r\n            {{value||#datalist.size.isr_new_requests#}}</p>\r\
+            \n        <h4 style=\"font-size: 12px;\r\n                   color: rgba(0,0,0,.6);\r\
+            \n                   margin: 5px 0;\">\r\n            {{title||New Requests}}\r\
+            \n        </h4>\r\n    </div>\r\n</div>\r\n<!---->"
+          attr-data-events-listening: [
+            ]
+          color: '#2FB976'
+          icon: <i class="zmdi zmdi-plus-circle-o"></i>
+          link: all_new_requests
+          bgImg: ''
+          style-border-color: '#F0F0F0'
+          title: New Requests
+          customId: ''
+          reload: ''
+          bgColor: ''
+          id: ED814C2862644BDCB8A7E56F6135AA8B
+          style-tablet-margin-bottom: 16px
+          value: '#datalist.size.isr_new_requests#'
+          height: 150px
+          style-border-radius: 15px
+      className: org.joget.apps.userview.lib.component.ColumnComponent
+      properties:
+        style-padding-right: 15px
+        style-tablet-flex: 0 0 50%
+        style-tablet-max-width: 50%
+        style-padding-left: 15px
+    - elements:
+      - className: org.joget.plugin.enterprise.InformationTileComponent
+        properties:
+          template: "<!--{sampleWidth: '250px', tags: 'light-bg icon'}-->\r\n<div\
+            \ class=\"card shadow-sm flex-row row align-items-center align-items-stretch\
+            \ ms-0 me-0\" \r\n     style=\"height:{{height||150}};\r\n           \
+            \ background-color:{{bgColor||}}; \r\n            background-image:url('{{bgImg||}}');\"\
+            >\r\n    <div style=\"position: absolute;\r\n                top: 5px;\r\
+            \n                right: 5px;\r\n                z-index: 1;\r\n     \
+            \           width: unset;\r\n                padding: 0;\">\r\n      \
+            \  {{reload||<a class=\"reload\" style=\"color:inherit; opacity: 0.6;\
+            \ margin-left:5px;\" href=\"\"><i class=\"fas fa-redo\"></i></a>}}\r\n\
+            \    </div>\r\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center\
+            \ \r\n                justify-content-center rounded-start\" \r\n    \
+            \     style=\"color:{{color||#2FB976}}; \r\n         font-size: 48px;\"\
+            >\r\n        {{icon||<i class=\"far fa-times-circle\"></i>}}\r\n    </div>\r\
+            \n    <div class=\"stats-info py-3 col-8 text-end\">\r\n        <p style=\"\
+            font-size: 24px; \r\n                  font-weight: 600; \r\n        \
+            \          margin-bottom: 10px;\">\r\n            {{value||#datalist.size.isr_rejected_requests#}}</p>\r\
+            \n        <h4 style=\"font-size: 12px;\r\n                   color: rgba(0,0,0,.6);\r\
+            \n                   margin: 5px 0;\">\r\n            {{title||Rejected\
+            \ Requests}}\r\n        </h4>\r\n    </div>\r\n</div>\r\n<!---->"
+          attr-data-events-listening: [
+            ]
+          color: '#2FB976'
+          icon: <i class="far fa-times-circle"></i>
+          link: all_rejected_requests
+          bgImg: ''
+          style-border-color: '#F0F0F0'
+          title: Rejected Requests
+          customId: ''
+          reload: ''
+          bgColor: ''
+          id: DDAC33444CF94DD1B9506E6D9567F7EF
+          value: '#datalist.size.isr_rejected_requests#'
+          height: 150px
+          style-border-radius: 15px
+      className: org.joget.apps.userview.lib.component.ColumnComponent
+      properties:
+        style-padding-right: 15px
+        style-tablet-flex: 0 0 50%
+        style-tablet-max-width: 50%
+        style-padding-left: 15px
+    - elements:
+      - className: org.joget.plugin.enterprise.InformationTileComponent
+        properties:
+          template: "<!--{sampleWidth: '250px', tags: 'light-bg icon'}-->\r\n<div\
+            \ class=\"card shadow-sm flex-row row align-items-center align-items-stretch\
+            \ ms-0 me-0\" \r\n     style=\"height:{{height||150}};\r\n           \
+            \ background-color:{{bgColor||}}; \r\n            background-image:url('{{bgImg||}}');\"\
+            >\r\n    <div style=\"position: absolute;\r\n                top: 5px;\r\
+            \n                right: 5px;\r\n                z-index: 1;\r\n     \
+            \           width: unset;\r\n                padding: 0;\">\r\n      \
+            \  {{reload||<a class=\"reload\" style=\"color:inherit; opacity: 0.6;\
+            \ margin-left:5px;\" href=\"\"><i class=\"fas fa-redo\"></i></a>}}\r\n\
+            \    </div>\r\n    <div class=\"stats-icon col-4 py-3 d-flex align-items-center\
+            \ \r\n                justify-content-center rounded-start\" \r\n    \
+            \     style=\"color:{{color||#2FB976}}; \r\n         font-size: 48px;\"\
+            >\r\n        {{icon||<i class=\"fas fa-check\"></i>}}\r\n    </div>\r\n\
+            \    <div class=\"stats-info py-3 col-8 text-end\">\r\n        <p style=\"\
+            font-size: 24px; \r\n                  font-weight: 600; \r\n        \
+            \          margin-bottom: 10px;\">\r\n            {{value||#datalist.size.isr_resolved_requests#}}</p>\r\
+            \n        <h4 style=\"font-size: 12px;\r\n                   color: rgba(0,0,0,.6);\r\
+            \n                   margin: 5px 0;\">\r\n            {{title||Resolved\
+            \ Requests}}\r\n        </h4>\r\n    </div>\r\n</div>\r\n<!---->"
+          attr-data-events-listening: [
+            ]
+          color: '#2FB976'
+          icon: <i class="fas fa-check"></i>
+          link: all_resolved_requests
+          bgImg: ''
+          style-border-color: '#F0F0F0'
+          title: Resolved Requests
+          customId: ''
+          reload: ''
+          bgColor: ''
+          id: 4BA3B31DA97A45C60294D5127CADD18D
+          value: '#datalist.size.isr_resolved_requests#'
+          height: 150px
+          style-border-radius: 15px
+      className: org.joget.apps.userview.lib.component.ColumnComponent
+      properties:
+        style-padding-right: 15px
+        style-tablet-flex: 0 0 50%
+        style-tablet-max-width: 50%
+        style-padding-left: 15px
+    className: org.joget.apps.userview.lib.component.ColumnsComponent
+    properties:
+      attr-data-events-listening: [
+        ]
+      col-3-style-padding-right: 15px
+      columns:
+      - style-mobile-max-width: ''
+        style-max-width: ''
+        style-tablet-max-width: 50%
+      - style-mobile-max-width: ''
+        style-max-width: ''
+        style-tablet-max-width: 50%
+      - style-mobile-max-width: ''
+        style-max-width: ''
+        style-tablet-max-width: 50%
+      - style-mobile-max-width: ''
+        style-max-width: ''
+        style-tablet-max-width: 50%
+      css-mobile-stack-columns: 'true'
+      col-0-style-padding-left: 15px
+      customId: ''
+      col-3-style-padding-left: 15px
+      col-2-style-padding-left: 15px
+      col-1-style-padding-left: 15px
+      gutter: 5px
+      col-0-style-padding-right: 15px
+      id: B6565FBB131D49E9CE7783D955957FB5
+      col-1-style-padding-right: 15px
+      col-2-style-padding-right: 15px
+  className: org.joget.apps.userview.lib.component.ContainerComponent
+  properties:
+    attr-data-events-listening: [
+      ]
+    style-margin-bottom: 12px
+    id: 7113EE7BEC57440D5C41508757629A81
+    customId: ''
+- elements:
+  - elements:
+    - elements:
+      - className: org.joget.plugin.enterprise.SqlChartMenu
+        properties:
+          stack: ''
+          xAxisDisplayAS: ''
+          showLegend: ''
+          customFooter: ''
+          enableOffline: ''
+          title: Requests Status
+          customId: ''
+          chartHeight: 400px
+          mapping_x: status
+          yaxisPrefix: ''
+          categoryAxisLabel: Status
+          horizontal: ''
+          library: echart
+          style-border-left-width: 1px
+          style-border-right-width: 1px
+          theme: ''
+          showValueLabel: ''
+          id: 0C86157D4D0643D98379F1CB48D2B374
+          series_customization: [
+            ]
+          style-tablet-margin-bottom: 16px
+          style-border-top-width: 1px
+          sortingOrder: ASC
+          customHeader: ''
+          valueAxisLabel: Count
+          style-custom: |-
+            border: 1px solid;
+            box-shadow: var(--jgt-box-shadow-sm) !important;
+          smoothLine: ''
+          style-border-bottom-width: 1px
+          sortingOrderByColumn: ''
+          keyName: ''
+          label: Chart
+          style-border-color: '#F0F0F0'
+          datalistId: isr_status_requests
+          chartWidth: 100%
+          userviewCacheDuration: '20'
+          xAxisBoundaryGap: ''
+          userviewCacheScope: ''
+          style-border-style: solid
+          datasource: datalist
+          mapping_ys:
+          - customization: ''
+            legend: ''
+            y: AFD_COUNT_id
+          chartType: bar
+          showTable: ''
+          optionCustomization: "{\n  title: {\n    left: 'left',\n\ttextStyle: {\n\
+            \      color: 'rgba(0, 0, 0, 0.88)'\n    }\n  },\n  grid: {\n    top:\
+            \ 70,\n\tbottom: 0\n  },\n  xAxis: {\n    axisLabel: {\n      color: 'rgba(0,\
+            \ 0, 0, 0.88)'\n    },\n\tnameTextStyle: {\n      color: 'rgba(0, 0, 0,\
+            \ 0.88)',\n    }\n  },\n  yAxis: {\n    axisLabel: {\n      color: 'rgba(0,\
+            \ 0, 0, 0.88)'\n    },\n\tnameTextStyle: {\n      color: 'rgba(0, 0, 0,\
+            \ 0.88)',\n    }\n  },\n  series: [{\n    itemStyle: {\n      color: '#2FB976'\n\
+            \    }\n  }],\n  tooltip: {\n    textStyle: {\n      color: 'rgba(0, 0,\
+            \ 0, 0.88)'\n    }\n  }\n};"
+          chartUseAllDataRows: ''
+          style-border-radius: 15px
+      className: org.joget.apps.userview.lib.component.ColumnComponent
+      properties:
+        style-padding-right: 15px
+        style-tablet-flex: 0 0 100%
+        style-flex: 0 0 60%
+        style-max-width: 60%
+        style-tablet-max-width: 100%
+        style-padding-left: 15px
+    - elements:
+      - className: org.joget.plugin.enterprise.SqlChartMenu
+        properties:
+          xAxisDisplayAS: ''
+          mapping_value: AFD_COUNT_id
+          showLegend: 'true'
+          customFooter: ''
+          enableOffline: ''
+          title: Requests Priority
+          style-tablet-margin-top: 16px
+          customId: ''
+          chartHeight: 400px
+          mapping_x: priority
+          yaxisPrefix: ''
+          categoryAxisLabel: Category
+          library: echart
+          style-border-left-width: 1px
+          style-border-right-width: 1px
+          theme: ''
+          showValueLabel: 'true'
+          id: DDAB87F83E4C44C88D607509EC689907
+          series_customization: [
+            ]
+          style-border-top-width: 1px
+          sortingOrder: ASC
+          customHeader: ''
+          mapping_values:
+          - customization: ''
+            legend: ''
+            value: AFD_COUNT_id
+          valueAxisLabel: Value
+          style-custom: |-
+            border: 1px solid;
+            box-shadow: var(--jgt-box-shadow-sm) !important;
+          smoothLine: ''
+          seriesCustomization: ''
+          style-border-bottom-width: 1px
+          sortingOrderByColumn: ''
+          keyName: ''
+          mapping_legend: priority
+          label: Chart
+          style-border-color: '#F0F0F0'
+          datalistId: isr_priority_requests
+          chartWidth: 100%
+          userviewCacheDuration: '20'
+          xAxisBoundaryGap: ''
+          showValue: 'true'
+          userviewCacheScope: ''
+          datasource: datalist
+          mapping_ys:
+          - customization: ''
+            legend: ''
+            y: AFD_COUNT_id
+          chartType: pie
+          showTable: ''
+          optionCustomization: "{\n  title: {\n    left: 'left',\n\ttextStyle: {\n\
+            \      color: 'rgba(0, 0, 0, 0.88)'\n    }\n  },\n  grid: {\n    top:\
+            \ 70,\n\tbottom: 0\n  },\n  color: ['#2a944c', '#56b467', '#8ed08c', '#bce4b3']\n\
+            };"
+          chartUseAllDataRows: ''
+          style-border-radius: 15px
+      className: org.joget.apps.userview.lib.component.ColumnComponent
+      properties:
+        style-padding-right: 15px
+        style-tablet-flex: 0 0 100%
+        style-flex: 0 0 40%
+        style-max-width: 40%
+        style-tablet-max-width: 100%
+        style-padding-left: 15px
+    className: org.joget.apps.userview.lib.component.ColumnsComponent
+    properties:
+      attr-data-events-listening: [
+        ]
+      gutter: 5px
+      col-0-style-padding-right: 15px
+      style-margin-bottom: 12px
+      columns:
+      - style-mobile-max-width: ''
+        style-max-width: 60%
+        style-tablet-max-width: 100%
+      - style-mobile-max-width: ''
+        style-max-width: 40%
+        style-tablet-max-width: 100%
+      css-mobile-stack-columns: 'true'
+      id: 355B636DF3EC477DB7A01D79ED09FD50
+      col-0-style-padding-left: 15px
+      col-1-style-padding-right: 15px
+      customId: ''
+      col-1-style-padding-left: 15px
+  className: org.joget.apps.userview.lib.component.ContainerComponent
+  properties:
+    id: 39E47679DB7247918FC730AD40C625FA
+- elements:
+  - elements:
+    - className: org.joget.apps.userview.lib.DataListMenu
+      properties:
+        cacheAllLinks: ''
+        customFooter: |-
+          <script>
+          $(function(){
+              $('.exportlinks').hide();
+          });
+          </script>
+        enableOffline: ''
+        customId: d_my_requests
+        checkboxPosition: 'no'
+        selectionType: multiple
+        style-border-left-width: 1px
+        style-border-right-width: 1px
+        id: 7B0E8FC42F324F68618CFCAF78D53D5E
+        rowCount: ''
+        style-tablet-margin-bottom: 16px
+        style-border-top-width: 1px
+        customHeader: |-
+          <h3>
+            My Request
+          </h3>
+        style-custom: |-
+          border: 1px solid;
+          box-shadow: var(--jgt-box-shadow-sm) !important;
+        style-border-bottom-width: 1px
+        keyName: ''
+        label: My Requests
+        style-border-color: '#F0F0F0'
+        buttonPosition: topLeft
+        datalistId: d_my_requests
+        userviewCacheDuration: '20'
+        cacheListAction: ''
+        userviewCacheScope: ''
+        style-border-style: solid
+        style-border-radius: 15px
+    className: org.joget.apps.userview.lib.component.ColumnComponent
+    properties:
+      style-padding-right: 15px
+      style-tablet-flex: 0 0 100%
+      style-flex: 0 0 60%
+      style-max-width: 60%
+      style-tablet-max-width: 100%
+      style-padding-left: 15px
+  - elements:
+    - className: org.joget.plugin.enterprise.DashboardMenu
+      properties:
+        style-padding-right: 0px
+        customHeader: |-
+          <style>
+          .reset_position{
+             display: none !important;
+          }
+          #content .grid-stack-item .grid-stack-item-content {
+              top: 0;
+              border: 1px solid #F0F0F0;
+              border-radius: 16px;
+              left: 0px !important;
+              right: 0px !important;
+              box-shadow: var(--jgt-box-shadow-sm) !important;
+          }
+          #content .grid-stack-item .grid-stack-item-header {
+              border-bottom: 0px;
+              padding-top: 10px;
+          }
+          .reset_position_container {
+              margin: 0 !important;
+          }
+          </style>
+        defaultPortletHeight: '250'
+        style-margin-left: 0px
+        plugins:
+        - autoHeight: 'true'
+          resizable: 'true'
+          x: ''
+          width: '3'
+          y: ''
+          fixed: 'true'
+          userviewMenu:
+            className: org.joget.plugin.enterprise.DataListInboxMenu
+            properties:
+              appFilter: process
+              list-customFooter: ''
+              assignment-customHeader: ''
+              keyName: ''
+              assignment-customFooter: ''
+              label: My Inbox
+              customId: ''
+              datalistId: d_add_requests
+              showDetail: ''
+              processId: isr
+              showPopup: ''
+              id: ''
+              rowCount: ''
+              list-customHeader: ''
+          autoReload: ''
+          height: '1042'
+        style-margin-right: 0px
+        customFooter: ''
+        label: Dashboard
+        enableOffline: ''
+        style-tablet-margin-top: 16px
+        customId: ''
+        style-padding-left: 0px
+        mode: plugins
+        userviewCacheDuration: '20'
+        userviewCacheScope: ''
+        id: AEDB7D3D47734ED185B3ED766A35FE96
+    className: org.joget.apps.userview.lib.component.ColumnComponent
+    properties:
+      style-padding-right: 15px
+      style-tablet-flex: 0 0 100%
+      style-flex: 0 0 40%
+      style-max-width: 40%
+      style-tablet-max-width: 100%
+      style-padding-left: 15px
+  className: org.joget.apps.userview.lib.component.ColumnsComponent
+  properties:
+    attr-data-events-listening: [
+      ]
+    gutter: 5px
+    col-0-style-padding-right: 15px
+    style-margin-bottom: 12px
+    columns:
+    - style-mobile-max-width: ''
+      style-max-width: 60%
+      style-tablet-max-width: 100%
+    - style-mobile-max-width: ''
+      style-max-width: 40%
+      style-tablet-max-width: 100%
+    css-mobile-stack-columns: 'true'
+    id: 7556EBCD877E47C7CFC51E8837CACB91
+    col-0-style-padding-left: 15px
+    col-1-style-padding-right: 15px
+    customId: ''
+    col-1-style-padding-left: 15px
+- className: menu-component
+className: org.joget.apps.userview.model.UserviewPage
+properties:
+  id: up-CFFB00C601B24605DC9609FB44E3508B

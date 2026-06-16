@@ -1,0 +1,166 @@
+template:
+  className: ''
+  properties: {
+    }
+useSession: ''
+showPageSizeSelector: 'true'
+rowActions: [
+  ]
+columns:
+- name: ref_id
+  id: column_0
+  label: Ref Id
+- name: subject
+  id: column_1
+  label: Subject
+- hidden: 'false'
+  name: priority
+  width: ''
+  headerAlignment: dataListAlignCenter
+  format:
+    className: ''
+    properties: {
+      }
+  action:
+    className: ''
+    properties: {
+      }
+  style: ''
+  id: column_7
+  label: Priority
+  sortable: 'true'
+  exclude_export: ''
+  alignment: dataListAlignCenter
+- hidden: 'false'
+  renderHtml: 'true'
+  format:
+    className: org.joget.plugin.enterprise.OptionsValueFormatter
+    properties:
+      optionsBinder:
+        className: ''
+        properties: {
+          }
+      options:
+      - label: <div class="badge rounded-pill text-success-emphasis bg-success-subtle
+          border-success-subtle">Verified</div>
+        value: Verified
+      - label: <div class="badge rounded-pill text-danger-emphasis bg-danger-subtle
+          border-danger-subtle">Rejected</div>
+        value: Rejected
+      - label: <div class="badge rounded-pill text-warning-emphasis bg-warning-subtle
+          border-warning-subtle">Reopened</div>
+        value: Reopened
+      - label: <div class="badge rounded-pill text-primary-emphasis bg-primary-subtle
+          border-primary-subtle">New</div>
+        value: New
+      - label: <div class="badge rounded-pill text-success-emphasis bg-success-subtle
+          border-success-subtle">Resolved</div>
+        value: Resolved
+      - label: <div class="badge rounded-pill text-secondary-emphasis bg-secondary-subtle
+          border-secondary-subtle">Assigned</div>
+        value: Assigned
+  label: ISR Status
+  sortable: 'true'
+  datalist_type: column
+  exclude_export: ''
+  name: status
+  width: ''
+  headerAlignment: dataListAlignLeft
+  action:
+    className: ''
+    properties: {
+      }
+  style: ''
+  id: column_2
+  alignment: dataListAlignLeft
+- hidden: 'false'
+  name: requester_name
+  width: ''
+  headerAlignment: ''
+  format:
+    className: ''
+    properties: {
+      }
+  action:
+    className: ''
+    properties: {
+      }
+  style: ''
+  id: column_3
+  label: Request By
+  sortable: 'false'
+  exclude_export: ''
+  alignment: ''
+- hidden: 'false'
+  name: createdDate
+  width: ''
+  headerAlignment: ''
+  format:
+    className: ''
+    properties: {
+      }
+  action:
+    className: ''
+    properties: {
+      }
+  style: ''
+  id: column_4
+  label: Request Date
+  sortable: 'true'
+  exclude_export: ''
+  alignment: ''
+pageSize: '0'
+orderBy: ref_id
+description: ''
+filters:
+- name: ref_id
+  id: filter_3
+  label: '#'
+  type:
+    className: org.joget.apps.datalist.lib.TextFieldDataListFilterType
+    properties:
+      defaultValue: ''
+  filterParamName: d-6707878-fn_ref_id
+- name: subject
+  id: filter_2
+  label: Subject
+  filterParamName: d-6707878-fn_subject
+- name: status
+  id: filter_1
+  label: ISR Status
+  type:
+    className: org.joget.apps.datalist.lib.TextFieldDataListFilterType
+    properties:
+      defaultValue: ''
+  filterParamName: d-6707878-fn_status
+- name: requester_name
+  id: filter_0
+  label: Requested By
+  filterParamName: d-6707878-fn_requester_name
+showDataWhenFilterSet: ''
+pageSizeSelectorOptions: 10,20,30,40,50,100
+buttonPosition: bottomLeft
+hidePageSize: ''
+checkboxPosition: left
+name: ISR Resolved Requests
+id: isr_resolved_requests
+binder:
+  className: org.joget.plugin.enterprise.AdvancedFormRowDataListBinder
+  properties:
+    joins: [
+      ]
+    having: [
+      ]
+    aggregateField: [
+      ]
+    formDefId: isr_new_request
+    extraCondition: ''
+    filters:
+    - field: status
+      join: AND
+      value: Resolved
+      operator: =
+    groupBy: ''
+actions: [
+  ]
+order: '1'

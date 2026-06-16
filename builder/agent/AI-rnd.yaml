@@ -1,0 +1,28 @@
+agent:
+  llm: [
+    ]
+  prompt: [
+    ]
+className: org.joget.ai.agent.AgentBuilder
+properties:
+  variables: [
+    ]
+  inputs: [
+    ]
+  name: rnd
+  description: ''
+  id: AI-rnd
+tasks:
+- enhancer: [
+    ]
+  decision: [
+    ]
+  guard: [
+    ]
+  prompt: [
+    ]
+  properties:
+    id: 1ddf223d-7289-4f54-9548-d5043f70b9d2
+    label: First Task
+  tool: [
+    ]

@@ -1,0 +1,31 @@
+<appDefinition>
+   <appId>isr</appId>
+   <id>isr</id>
+   <version></version>
+   <name>Internal Service Request</name>
+   <packageDefinitionList/>
+   <formDefinitionList/>
+   <userviewDefinitionList/>
+   <datalistDefinitionList/>
+   <builderDefinitionList/>
+   <pluginDefaultPropertiesList/>
+   <environmentVariableList>
+      <environmentVariable>
+         <id>counter</id>
+         <appId>isr</appId>
+         <appVersion>5</appVersion>
+         <value>17</value>
+         <remarks>Used for plugin: Id Generator Field</remarks>
+      </environmentVariable>
+      <environmentVariable>
+         <id>AppName</id>
+         <appId>isr</appId>
+         <appVersion>5</appVersion>
+         <value>Internal Service Request</value>
+      </environmentVariable>
+   </environmentVariableList>
+   <messageList/>
+   <resourceList/>
+   <license>BXiIDyi75K/balSfhqm1i7aycpqYcRKBBPMkO7zfnto=</license>
+   <createdBy>admin</createdBy>
+</appDefinition>
