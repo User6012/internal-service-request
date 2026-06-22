@@ -20,14 +20,12 @@
                </packageActivityForm>
             </entry>
             <entry>
-               <string>isr::verifiy_resolved_request</string>
+               <string>process2::runProcess</string>
                <packageActivityForm>
-                  <processDefId>isr</processDefId>
-                  <activityDefId>verifiy_resolved_request</activityDefId>
-                  <formId>isr_verify_resolved</formId>
-                  <type>SINGLE</type>
+                  <processDefId>process2</processDefId>
+                  <activityDefId>runProcess</activityDefId>
                   <autoContinue>false</autoContinue>
-                  <disableSaveAsDraft>true</disableSaveAsDraft>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -61,6 +59,26 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>process2::activity1</string>
+               <packageActivityForm>
+                  <processDefId>process2</processDefId>
+                  <activityDefId>activity1</activityDefId>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>isr::verifiy_resolved_request</string>
+               <packageActivityForm>
+                  <processDefId>isr</processDefId>
+                  <activityDefId>verifiy_resolved_request</activityDefId>
+                  <formId>isr_verify_resolved</formId>
+                  <type>SINGLE</type>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>true</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
          </packageActivityFormMap>
@@ -119,6 +137,15 @@
                   <participantId>processStartWhiteList</participantId>
                   <type>role</type>
                   <value>loggedInUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process2::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>process2</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>

@@ -16,14 +16,12 @@ packageDefinitionList:
           type: SINGLE
           autoContinue: 'false'
           disableSaveAsDraft: 'true'
-      - string: isr::verifiy_resolved_request
+      - string: process2::runProcess
         packageActivityForm:
-          processDefId: isr
-          activityDefId: verifiy_resolved_request
-          formId: isr_verify_resolved
-          type: SINGLE
+          processDefId: process2
+          activityDefId: runProcess
           autoContinue: 'false'
-          disableSaveAsDraft: 'true'
+          disableSaveAsDraft: 'false'
       - string: isr::resolve_request
         packageActivityForm:
           processDefId: isr
@@ -48,6 +46,20 @@ packageDefinitionList:
           type: SINGLE
           autoContinue: 'false'
           disableSaveAsDraft: 'false'
+      - string: process2::activity1
+        packageActivityForm:
+          processDefId: process2
+          activityDefId: activity1
+          autoContinue: 'false'
+          disableSaveAsDraft: 'false'
+      - string: isr::verifiy_resolved_request
+        packageActivityForm:
+          processDefId: isr
+          activityDefId: verifiy_resolved_request
+          formId: isr_verify_resolved
+          type: SINGLE
+          autoContinue: 'false'
+          disableSaveAsDraft: 'true'
     packageActivityPluginMap:
       entry:
       - string: isr::send_rejected_notifiction
@@ -134,6 +146,12 @@ packageDefinitionList:
           participantId: processStartWhiteList
           type: role
           value: loggedInUser
+      - string: process2::processStartWhiteList
+        packageParticipant:
+          processDefId: process2
+          participantId: processStartWhiteList
+          type: role
+          value: adminUser
 formDefinitionList: ''
 userviewDefinitionList: ''
 datalistDefinitionList: ''
