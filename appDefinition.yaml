@@ -30,6 +30,12 @@ packageDefinitionList:
           type: SINGLE
           autoContinue: 'false'
           disableSaveAsDraft: 'true'
+      - string: process3::runProcess
+        packageActivityForm:
+          processDefId: process3
+          activityDefId: runProcess
+          autoContinue: 'false'
+          disableSaveAsDraft: 'false'
       - string: isr::resolve_reopened_request
         packageActivityForm:
           processDefId: isr
@@ -38,6 +44,12 @@ packageDefinitionList:
           type: SINGLE
           autoContinue: 'false'
           disableSaveAsDraft: 'true'
+      - string: process3::activity1
+        packageActivityForm:
+          processDefId: process3
+          activityDefId: activity1
+          autoContinue: 'false'
+          disableSaveAsDraft: 'false'
       - string: isr::runProcess
         packageActivityForm:
           processDefId: isr
@@ -122,6 +134,24 @@ packageDefinitionList:
               ]
     packageParticipantMap:
       entry:
+      - string: isr::processStartWhiteList
+        packageParticipant:
+          processDefId: isr
+          participantId: processStartWhiteList
+          type: role
+          value: loggedInUser
+      - string: process2::processStartWhiteList
+        packageParticipant:
+          processDefId: process2
+          participantId: processStartWhiteList
+          type: role
+          value: adminUser
+      - string: process3::processStartWhiteList
+        packageParticipant:
+          processDefId: process3
+          participantId: processStartWhiteList
+          type: role
+          value: adminUser
       - string: isr::hod
         packageParticipant:
           processDefId: isr
@@ -140,18 +170,6 @@ packageDefinitionList:
           participantId: assignee
           type: workflowVariable
           value: assignee,user
-      - string: isr::processStartWhiteList
-        packageParticipant:
-          processDefId: isr
-          participantId: processStartWhiteList
-          type: role
-          value: loggedInUser
-      - string: process2::processStartWhiteList
-        packageParticipant:
-          processDefId: process2
-          participantId: processStartWhiteList
-          type: role
-          value: adminUser
 formDefinitionList: ''
 userviewDefinitionList: ''
 datalistDefinitionList: ''

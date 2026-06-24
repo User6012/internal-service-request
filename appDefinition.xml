@@ -40,6 +40,15 @@
                </packageActivityForm>
             </entry>
             <entry>
+               <string>process3::runProcess</string>
+               <packageActivityForm>
+                  <processDefId>process3</processDefId>
+                  <activityDefId>runProcess</activityDefId>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
                <string>isr::resolve_reopened_request</string>
                <packageActivityForm>
                   <processDefId>isr</processDefId>
@@ -48,6 +57,15 @@
                   <type>SINGLE</type>
                   <autoContinue>false</autoContinue>
                   <disableSaveAsDraft>true</disableSaveAsDraft>
+               </packageActivityForm>
+            </entry>
+            <entry>
+               <string>process3::activity1</string>
+               <packageActivityForm>
+                  <processDefId>process3</processDefId>
+                  <activityDefId>activity1</activityDefId>
+                  <autoContinue>false</autoContinue>
+                  <disableSaveAsDraft>false</disableSaveAsDraft>
                </packageActivityForm>
             </entry>
             <entry>
@@ -104,6 +122,33 @@
          </packageActivityPluginMap>
          <packageParticipantMap>
             <entry>
+               <string>isr::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>isr</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>loggedInUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process2::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>process2</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
+               <string>process3::processStartWhiteList</string>
+               <packageParticipant>
+                  <processDefId>process3</processDefId>
+                  <participantId>processStartWhiteList</participantId>
+                  <type>role</type>
+                  <value>adminUser</value>
+               </packageParticipant>
+            </entry>
+            <entry>
                <string>isr::hod</string>
                <packageParticipant>
                   <processDefId>isr</processDefId>
@@ -128,24 +173,6 @@
                   <participantId>assignee</participantId>
                   <type>workflowVariable</type>
                   <value>assignee,user</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>isr::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>isr</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>loggedInUser</value>
-               </packageParticipant>
-            </entry>
-            <entry>
-               <string>process2::processStartWhiteList</string>
-               <packageParticipant>
-                  <processDefId>process2</processDefId>
-                  <participantId>processStartWhiteList</participantId>
-                  <type>role</type>
-                  <value>adminUser</value>
                </packageParticipant>
             </entry>
          </packageParticipantMap>
